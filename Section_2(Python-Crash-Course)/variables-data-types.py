@@ -33,6 +33,11 @@ print(website1)  # prints learn-python-app.com
 print(website2)  # prints learn-python-app.com
 
 # (4) Rules for Naming Python Variables
+# Constants and variables should have a combination of letters in lowercase (a to z),
+# or uppercase (A to Z) or digits (0 to 9) or an underscore (_). For example:
+# snake_case, MACRO_CASE, camelCase, CapWords.
+# Avoid using keywords like if, True, class, etc. as variable names.
+
 # (5) Python Constants
 # (6) Python Literals
 # (7) Python Numeric Literals
