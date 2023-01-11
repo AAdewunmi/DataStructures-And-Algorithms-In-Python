@@ -23,6 +23,15 @@ site_name = 'python-is-the-best.com'
 print(site_name)
 
 # (3) Assigning multiple values to multiple variables
+a, b, c = 99, 675.25, 'Ere, dere, an, everywhere!'
+print(a)  # prints 99
+print(b)  # prints 675.25
+print(c)  # prints Ere, dere, an, everywhere!
+# (3.i) Assigning the same value to multiple variables
+website1 = website2  = 'learn-python-app.com'
+print(website1)  # prints learn-python-app.com
+print(website2)  # prints learn-python-app.com
+
 # (4) Rules for Naming Python Variables
 # (5) Python Constants
 # (6) Python Literals
