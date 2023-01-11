@@ -13,8 +13,15 @@ numbers = 10
 # Print Output
 print(10)
 
-
 # (2) Changing the Value of a Variable in Python
+site_name = 'python-data-structures-and-algorithms.com'
+# Print Output
+print(site_name)
+# assigning a new value to site_name
+site_name = 'python-is-the-best.com'
+# Print Output
+print(site_name)
+
 # (3) Assigning multiple values to multiple variables
 # (4) Rules for Naming Python Variables
 # (5) Python Constants
