@@ -11,7 +11,7 @@ adapted from a course on Udemy.
 
 ## 2. Outline:
 
-- [Section 2: Python Crash Course](Section_2(Python-Crash-Course)/DataTypes-Variables.py)
+- [Section 2: Python Crash Course](Section_2(Python-Crash-Course)/variables-data-types.py)
 
 - Section 3: Analysis of Algorithms
 

@@ -36,7 +36,10 @@ print(website2)  # prints learn-python-app.com
 # Constants and variables should have a combination of letters in lowercase (a to z),
 # or uppercase (A to Z) or digits (0 to 9) or an underscore (_). For example:
 # snake_case, MACRO_CASE, camelCase, CapWords.
+#
 # Avoid using keywords like if, True, class, etc. as variable names.
+# For more information, see "PEP 8 – Style Guide for Python Code"
+# https://peps.python.org/pep-0008/
 
 # (5) Python Constants
 # (6) Python Literals
