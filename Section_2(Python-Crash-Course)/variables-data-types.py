@@ -42,6 +42,18 @@ print(website2)  # prints learn-python-app.com
 # https://peps.python.org/pep-0008/
 
 # (5) Python Constants
+# A constant is a special type of variable whose value cannot be changed.
+# In Python, constants are usually declared and assigned in a module (a new file containing variables, functions, etc. which is imported to the main file).
+# Declare Constants
+PI = 3.14
+Eulers_Number = 2.71828
+#
+print(PI) # prints 3.14
+print(Eulers_Number) # prints 2.71828
+#
+#Note: In reality, we don't use constants in Python. Naming them in all capital letters is a convention to separate them from variables, however, it does not actually prevent reassignment.
+
+
 # (6) Python Literals
 # (7) Python Numeric Literals
 # (8) Python Boolean Literals
