@@ -89,4 +89,10 @@ print(a_string)
 # Here, 'Python is fun' is a string literal assigned to a_string.
 
 # (10) Special Literal in Python
+# Python contains one special literal None. We use it to specify a null variable. For example,
+value = None
+print(value)
+# Output: None
+# Here, we get None as an output as the value variable has no value assigned to it.
+
 # (11) Literal Collections
