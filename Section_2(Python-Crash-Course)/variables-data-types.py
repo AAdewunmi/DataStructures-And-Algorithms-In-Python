@@ -60,6 +60,12 @@ site_name = 'programming.python'
 print(site_name)
 
 # (7) Python Numeric Literals
+# Numeric Literals are immutable (unchangeable). Numeric literals can belong to 3 different numerical types: Integer, Float and Imaginary Numbers
+# Some examples of integer literals:
+print(7, 2147483647, 0o177, 0b100110111)
+print(3, 79228162514264337593543950336, 0o377, 0xdeadbeef)
+print(100_000_000_000, 0b_1110_0101)
+
 # (8) Python Boolean Literals
 # (9) String and Character Literals in Python
 # (10) Special Literal in Python
