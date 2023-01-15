@@ -96,3 +96,21 @@ print(value)
 # Here, we get None as an output as the value variable has no value assigned to it.
 
 # (11) Literal Collections
+# There are four different literal collections List literals, Tuple literals, Dict literals, and Set literals.
+# list literal
+fruits = ["apple", "mango", "orange"]
+print(fruits)
+
+# tuple literal
+numbers = (1, 2, 3)
+print(numbers)
+
+# dictionary literal
+alphabets = {'a':'apple', 'b':'ball', 'c':'cat'}
+print(alphabets)
+
+# set literal
+vowels = {'a', 'e', 'i' , 'o', 'u'}
+print(vowels)
+
+# In the above example, we created a list of fruits, a tuple of numbers, a dictionary of alphabets having values with keys designated to each value and a set of vowels.
