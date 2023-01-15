@@ -76,5 +76,17 @@ print(boolean_literal)
 
 
 # (9) String and Character Literals in Python
+# Character literals are unicode characters enclosed in a quote. For example:
+a_character = 'A'
+# Print
+print(a_character)
+# Here, A is a character literal assigned to a_character.
+# Similarly, String literals are sequences of Characters enclosed in quotation marks.
+# For example:
+a_string = 'Python is fun'
+# Print
+print(a_string)
+# Here, 'Python is fun' is a string literal assigned to a_string.
+
 # (10) Special Literal in Python
 # (11) Literal Collections
