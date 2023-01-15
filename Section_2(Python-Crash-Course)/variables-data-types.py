@@ -67,6 +67,14 @@ print(3, 79228162514264337593543950336, 0o377, 0xdeadbeef)
 print(100_000_000_000, 0b_1110_0101)
 
 # (8) Python Boolean Literals
+# There are two boolean literals: True and False
+# For example:
+boolean_literal = True
+# Print
+print(boolean_literal)
+# Here True is a boolean literal assigned to boolean_literal
+
+
 # (9) String and Character Literals in Python
 # (10) Special Literal in Python
 # (11) Literal Collections
