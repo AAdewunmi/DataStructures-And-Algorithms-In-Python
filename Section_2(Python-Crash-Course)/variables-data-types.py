@@ -53,8 +53,12 @@ print(Eulers_Number) # prints 2.71828
 #
 #Note: In reality, we don't use constants in Python. Naming them in all capital letters is a convention to separate them from variables, however, it does not actually prevent reassignment.
 
-
 # (6) Python Literals
+# Literals are representations of fixed values in a program. They could be numbers, characters, or strings etc. For example, 'Python is cool', 24, 99.73, 'Z'
+# site_name is a variable, and 'programming.python' is a literal.
+site_name = 'programming.python'
+print(site_name)
+
 # (7) Python Numeric Literals
 # (8) Python Boolean Literals
 # (9) String and Character Literals in Python
