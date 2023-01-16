@@ -167,5 +167,11 @@ print(programming_languages)
 # Here, we have created a list named programming_languages with 3 string values inside it.
 
 # (4) Python Tuple Data Type
+# Tuple is an ordered sequence of items same as a list. The only difference is that tuples are immutable. Tuples once created cannot be modified.
+# In Python, we use the parentheses () to store items of a tuple. For example,
+product = ('Xbox', 499.99)
+print(product)
+# Here, product is a tuple with a string value Xbox and integer value 499.99.
+
 # (5) Python Set Data Type
 # (6) Python Dictionary Data Type
