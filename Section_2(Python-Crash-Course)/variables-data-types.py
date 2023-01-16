@@ -161,6 +161,11 @@ message_to_all = 'Learn Python in 24 hours, as if!'
 # In the above example, we have created string-type variables: name_of_language and message_to_all with values 'Python' and 'Learn Python in 24 hours, as if!' respectively.
 
 # (3) Python List Data Type
+# List is an ordered collection of similar or different types of items separated by commas and enclosed within brackets [ ]. For example,
+programming_languages = ["Java", "Python", "JavaScript"]
+print(programming_languages)
+# Here, we have created a list named programming_languages with 3 string values inside it.
+
 # (4) Python Tuple Data Type
 # (5) Python Set Data Type
 # (6) Python Dictionary Data Type
