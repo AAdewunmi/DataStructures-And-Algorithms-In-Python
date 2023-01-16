@@ -6,6 +6,9 @@
 
 # Python Variables, Constants, Literals and print()
 # Definition: Variables are used to store values
+# =================================================
+# =================================================
+
 
 # (1) Assigning values to Variables in Python
 # Assign (=) value "10" to numbers variable
@@ -114,3 +117,38 @@ vowels = {'a', 'e', 'i' , 'o', 'u'}
 print(vowels)
 
 # In the above example, we created a list of fruits, a tuple of numbers, a dictionary of alphabets having values with keys designated to each value and a set of vowels.
+
+# Python Data Types
+# =================
+# =================
+# In computer programming, data types specify the type of data that can be stored inside a variable.
+
+# Python Numeric Data type
+# In Python, numeric data type is used to hold numeric values.
+# Integers, floating-point numbers and complex numbers fall under Python numbers category. They are defined as int, float and complex classes in Python.
+#
+# int - holds signed integers of non-limited length.
+# float - holds floating decimal points and it's accurate up to 15 decimal places.
+# complex - holds complex numbers.
+#
+# We can use the type() function to know which class a variable or a value belongs to.
+#
+# Let's see an example,
+num1 = 5
+print(num1, 'is of type', type(num1))
+
+num2 = 2.0
+print(num2, 'is of type', type(num2))
+
+num3 = 1+2j
+print(num3, 'is of type', type(num3))
+
+# In the above example, we have created three variables named num1, num2 and num3 with values 5, 5.0, and 1+2j respectively.
+#
+# We have also used the type() function to know which class a certain variable belongs to.
+#
+# Since,
+#
+#     5 is an integer value, type() returns int as the class of num1 i.e <class 'int'>
+#     2.0 is a floating value, type() returns float as the class of num2 i.e <class 'float'>
+#     1 + 2j is a complex number, type() returns complex as the class of num3 i.e <class 'complex'>
