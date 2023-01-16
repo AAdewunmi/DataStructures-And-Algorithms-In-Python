@@ -188,3 +188,14 @@ print(type(student_id))
 # Since sets are unordered collections, indexing has no meaning. Hence, the slicing operator [] does not work.
 
 # (6) Python Dictionary Data Type
+# Python dictionary is an unordered collection of items. It stores elements in key/value pairs.
+# Here, keys are unique identifiers that are associated with each value.
+# Let's see an example,
+# create a dictionary named capital_city
+capital_city = {'Nepal': 'Kathmandu', 'Italy': 'Rome', 'England': 'London'}
+print(capital_city)
+
+# In the above example, we have created a dictionary named capitalCity. Here,
+#     1. Keys are 'Nepal', 'Italy', 'England'
+#     2. Values are 'Kathmandu', 'Rome', 'London'
+# When we run this code, we might get output in a different order. This is because the dictionary has no particular order.
