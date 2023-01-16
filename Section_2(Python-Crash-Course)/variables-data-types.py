@@ -123,7 +123,7 @@ print(vowels)
 # =================
 # In computer programming, data types specify the type of data that can be stored inside a variable.
 
-# Python Numeric Data type
+# (1) Python Numeric Data type
 # In Python, numeric data type is used to hold numeric values.
 # Integers, floating-point numbers and complex numbers fall under Python numbers category. They are defined as int, float and complex classes in Python.
 #
@@ -152,3 +152,15 @@ print(num3, 'is of type', type(num3))
 #     5 is an integer value, type() returns int as the class of num1 i.e <class 'int'>
 #     2.0 is a floating value, type() returns float as the class of num2 i.e <class 'float'>
 #     1 + 2j is a complex number, type() returns complex as the class of num3 i.e <class 'complex'>
+
+# (2) Python String Data Type
+# String is a sequence of characters represented by either single or double quotes. For example,
+name_of_language = 'Python'
+print(name_of_language)
+message_to_all = 'Learn Python in 24 hours, as if!'
+# In the above example, we have created string-type variables: name_of_language and message_to_all with values 'Python' and 'Learn Python in 24 hours, as if!' respectively.
+
+# (3) Python List Data Type
+# (4) Python Tuple Data Type
+# (5) Python Set Data Type
+# (6) Python Dictionary Data Type
