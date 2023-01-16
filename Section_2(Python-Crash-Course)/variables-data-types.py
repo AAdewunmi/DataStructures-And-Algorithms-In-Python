@@ -174,4 +174,17 @@ print(product)
 # Here, product is a tuple with a string value Xbox and integer value 499.99.
 
 # (5) Python Set Data Type
+# Set is an unordered collection of unique items. Set is defined by values separated by commas inside braces { }. For example,
+# create a set named student_id
+student_id = {112, 114, 116, 118, 115}
+
+# display student_id elements
+print(student_id)
+
+# display type of student_id
+print(type(student_id))
+
+# Here, we have created a set named student_info with 5 integer values.
+# Since sets are unordered collections, indexing has no meaning. Hence, the slicing operator [] does not work.
+
 # (6) Python Dictionary Data Type
