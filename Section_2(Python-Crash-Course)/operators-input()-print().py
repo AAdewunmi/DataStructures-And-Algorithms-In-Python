@@ -52,6 +52,7 @@ print('Data type of num:', type(num))
 # Types of Python Operators
 # 1. Arithmetic Operators
 # Arithmetic operators are used to perform mathematical operations like addition, subtraction, multiplication, etc. For example,
+
 a = 7
 b = 2
 
@@ -77,6 +78,22 @@ print ('Modulo: ', a % b)
 print ('Power: ', a ** b)
 
 # 2. Assignment Operators
+# Assignment operators are used to assign values to variables.
+
+# Assignment Operator: a = 10
+
+# Addition Assignment: '+=' // a += 1 # a = a + 1
+
+# Subtraction Assignment: '-=' // a -= 3 # a = a - 3
+
+# Multiplication Assignment: '*=' // a *= 4 # a = a * 4
+
+# Division Assignment: '/=' // a /= 3 # a = a / 3
+
+# Remainder Assignment: '%=' // a %= 10 # a = a % 10
+
+# Exponent Assignment: a **= 10 # a = a ** 10
+
 # 3. Comparison Operators
 # 4. Logical Operators
 # 5. Bitwise Operators
