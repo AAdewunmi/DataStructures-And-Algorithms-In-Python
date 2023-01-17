@@ -120,5 +120,21 @@ print('a >= b =', a >= b)
 print('a <= b =', a <= b)
 
 # 4. Logical Operators
+# Definition: Logical operators are used to check whether an expression is True or False. They are used in decision-making. There are three operators 'and', 'or', 'not'
+# For example,
+a = 5
+b = 6
+print((a > 2) and (b >= 6))    # True
+# Here, and is the logical operator AND. Since both a > 2 and b >= 6 are True, the result is True.
+
+# Logical AND (a and b):
+# True only if both the operands are True
+
+# Logical OR (a or b):
+# True if at least one of the operands is True
+
+# Logical NOT (not a):
+# True if the operand is False and vice-versa.
+
 # 5. Bitwise Operators
 # 6. Special Operators
