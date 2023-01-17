@@ -95,6 +95,30 @@ print ('Power: ', a ** b)
 # Exponent Assignment: a **= 10 # a = a ** 10
 
 # 3. Comparison Operators
+# Definition: Comparison operators compare two values/variables and return a boolean result: True or False. For example,
+
+a = 5
+
+b = 2
+
+# equal to operator
+print('a == b =', a == b)
+
+# not equal to operator
+print('a != b =', a != b)
+
+# greater than operator
+print('a > b =', a > b)
+
+# less than operator
+print('a < b =', a < b)
+
+# greater than or equal to operator
+print('a >= b =', a >= b)
+
+# less than or equal to operator
+print('a <= b =', a <= b)
+
 # 4. Logical Operators
 # 5. Bitwise Operators
 # 6. Special Operators
