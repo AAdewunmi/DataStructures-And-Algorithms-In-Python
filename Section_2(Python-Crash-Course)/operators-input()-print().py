@@ -152,3 +152,30 @@ print((a > 2) and (b >= 6))    # True
 # <<      Bitwise left shift   x << 2 = 40 (0010 1000)
 
 # 6. Special Operators
+# Definition: Python language offers some special types of operators like the identity operator and the membership operator. They are described below with examples.
+
+# 1. Identity operators
+# Definition: In Python, 'is' and 'is not' are used to check if two values are located on the same part of the memory. Two variables that are equal does not imply that they are identical.
+
+# Operator:     Meaning:                            Example:
+# is     True if the operands are identical        x is True
+#           (refer to the same object)
+# is not True if the operands are not identical    x is not True
+#        (do not refer to the same object)
+
+# Example: Identity operators in Python
+x1 = 5
+y1 = 5
+x2 = 'Hello'
+y2 = 'Hello'
+x3 = [1,2,3]
+y3 = [1,2,3]
+
+print(x1 is not y1)  # prints False
+print(x2 is y2)  # prints True
+print(x3 is y3)  # prints False
+
+# Here, we see that x1 and y1 are integers of the same values, so they are equal as well as identical. Same is the case with x2 and y2 (strings).
+# But x3 and y3 are lists. They are equal but not identical. It is because the interpreter locates them separately in memory although they are equal.
+
+# 2. Membership operators
