@@ -2,7 +2,7 @@
 # ========================
 # Adapted From: Programiz
 # Tutorial Title: Python Variables, Constants and Literals
-# URL: https://www.programiz.com/python-programming/variables-constants-literals
+# URL: https://www.programiz.com/python-programming
 
 # Python Variables, Constants, Literals and print()
 # Definition: Variables are used to store values

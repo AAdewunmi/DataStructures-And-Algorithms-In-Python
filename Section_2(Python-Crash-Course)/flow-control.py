@@ -1,0 +1,23 @@
+# Python Flow Control
+# ========================
+# Adapted From: Programiz
+# Tutorial Title: Python Flow Control
+# URL: https://www.programiz.com/python-programming
+
+# 1. Python if ... else
+# In Python, there are three forms of the 'if ... else' statement:
+# i. if statement
+# Example 1: Python if Statement
+
+number = 10
+# check if number is greater than 0
+if number > 0:
+    print('Number is positive.')
+print('The if statement is easy')
+
+# ii. if ... else statement
+# iii.if ... elif ... else statement
+# 2. Python for Loop
+# 3. Python while Loop
+# 4. Python break and continue
+# 5. Python Pass
