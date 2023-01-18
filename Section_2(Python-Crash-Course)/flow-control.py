@@ -26,7 +26,15 @@ else:
 print('This statement is always executed')
 
 # iii.if ... elif ... else statement
-
+# Example 3: Python if...elif...else Statement
+number = 0
+if number > 0:
+    print("Positive number")
+elif number == 0:
+    print('Zero')
+else:
+    print('Negative number')
+print('This statement is always executed')
 
 
 # 2. Python for Loop
