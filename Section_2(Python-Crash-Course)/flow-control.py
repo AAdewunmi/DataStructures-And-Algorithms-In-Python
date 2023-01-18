@@ -36,12 +36,29 @@ else:
     print('Negative number')
 print('This statement is always executed')
 
+# 2. Python Nested if statements
+# -------------------------------
+# Example 4: Python Nested if Statement
+number = 5
+# outer if statement
+if (number >= 0):
+    # inner if statement
+    if number == 0:
+        print('Number is 0')
+    # inner else statement
+    else:
+        print('Number is positive')
+# outer else statement
+else:
+    print('Number is negative')
+# Output: Number is positive
 
-# 2. Python for Loop
+
+# 3. Python for Loop
 # -------------------
-# 3. Python while Loop
+# 4. Python while Loop
 # ----------------------
-# 4. Python break and continue
+# 5. Python break and continue
 # -----------------------------
-# 5. Python Pass
+# 6. Python Pass
 # ---------------
