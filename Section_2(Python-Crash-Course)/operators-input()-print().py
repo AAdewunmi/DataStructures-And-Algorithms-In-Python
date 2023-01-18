@@ -1,8 +1,8 @@
 # Python Operators, input() and print()
 # ========================
 # Adapted From: Programiz
-# Tutorial Title: Python Variables, Constants and Literals
-# URL: https://www.programiz.com/python-programming/variables-constants-literals
+# Tutorial Title: Python Operators, input() and print()
+# URL: https://www.programiz.com/python-programming
 
 # Python Basic Input and Output (I/0)
 # 1. Python print()
