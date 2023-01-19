@@ -73,6 +73,14 @@ for i in values:
     print(i)
 
 # Python for loop with else
+# Definition: A 'for' loop can have an optional else block as well. The 'else' part is executed when the loop is finished. For example,
+digits = [0, 1, 5]
+for i in digits:
+    print(i)
+else:
+    print("No items left.")
+
+
 
 # 4. Python while Loop
 # ----------------------
