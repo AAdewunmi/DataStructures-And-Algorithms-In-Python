@@ -155,5 +155,14 @@ for i in range(5):
         continue
     print(i)
 
+# Example 2: Python continue Statement with while Loop
+# program to print odd numbers from 1 to 10
+num = 0
+while num < 10:
+    num += 1
+    if (num % 2) == 0:
+        continue
+    print(num)
+
 # 6. Python Pass
 # ---------------
