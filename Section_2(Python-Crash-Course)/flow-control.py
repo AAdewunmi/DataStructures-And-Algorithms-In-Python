@@ -102,6 +102,12 @@ while current_level <= final_level:
 print('Level Ends')
 
 # Infinite while Loop in Python
+# If the condition of a loop is always True, the loop runs for infinite times (until the memory is full). For example,
+# infinite while loop
+# while True:
+    # body of the loop
+# In the above example, the condition is always True. Hence, the loop body will run for infinite times.
+
 # Python While loop with else
 # Python for vs while loops
 
