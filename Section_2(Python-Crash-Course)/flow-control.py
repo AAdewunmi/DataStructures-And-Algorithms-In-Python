@@ -109,6 +109,15 @@ print('Level Ends')
 # In the above example, the condition is always True. Hence, the loop body will run for infinite times.
 
 # Python While loop with else
+# A while loop can have an optional else block as well.
+# The else part is executed after the condition in the while loop evaluates to False. For example,
+counter = 0
+while counter < 3:
+    print('Inside loop')
+    counter = counter + 1
+else:
+    print('Inside else')
+
 # Python for vs while loops
 
 # 5. Python break and continue
