@@ -56,6 +56,17 @@ else:
 
 # 3. Python for Loop
 # -------------------
+# Definition: In Python, the for loop is used to run a block of code for a certain number of times.
+# It is used to iterate over any sequences such as lists, tuples, string, etc.
+# Example: Loop Over Python List
+programming_languages = ['Swift', 'Python', 'Go', 'JavaScript']
+for language in programming_languages:
+    print(language)
+
+# Python for Loop with Python range()
+
+# Python for loop with else
+
 # 4. Python while Loop
 # ----------------------
 # 5. Python break and continue
