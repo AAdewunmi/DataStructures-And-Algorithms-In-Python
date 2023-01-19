@@ -130,5 +130,14 @@ for i in range(4):
 
 # 5. Python break and continue
 # -----------------------------
+# The break statement is used to terminate the loop immediately when it is encountered.
+# Syntax: break
+# Example 1: Python break Statement with for Loop
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+
+
 # 6. Python Pass
 # ---------------
