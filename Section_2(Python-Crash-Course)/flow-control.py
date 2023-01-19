@@ -64,6 +64,13 @@ for language in programming_languages:
     print(language)
 
 # Python for Loop with Python range()
+# A 'range' is a series of values between two numeric intervals.
+# We use Python's built-in function range() to define a range of values. For example,
+# use of range() to define a range of values
+values = range(4)
+# iterate from i = 0 to i = 3
+for i in values:
+    print(i)
 
 # Python for loop with else
 
