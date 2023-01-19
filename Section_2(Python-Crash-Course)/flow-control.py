@@ -147,6 +147,13 @@ while (i <= 10):
         break
     i = i + 1
 
+# The continue statement is used to skip the current iteration of the loop and the control flow of the program goes to the next iteration.
+# Syntax: continue
+# Example 1: Python continue Statement with for Loop
+for i in range(5):
+    if i == 3:
+        continue
+    print(i)
 
 # 6. Python Pass
 # ---------------
