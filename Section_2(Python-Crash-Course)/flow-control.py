@@ -81,9 +81,22 @@ else:
     print("No items left.")
 
 
-
 # 4. Python while Loop
 # ----------------------
+# Definition: Python while loop is used to run a specified code until a certain condition is met.
+# Example 1: Python while Loop
+i = 1
+n = 5
+while i <= n:
+    print(i)
+    i = i + 1
+
+
+# Example 2: Python while Loop to Display Game Level
+# Infinite while Loop in Python
+# Python While loop with else
+# Python for vs while loops
+
 # 5. Python break and continue
 # -----------------------------
 # 6. Python Pass
