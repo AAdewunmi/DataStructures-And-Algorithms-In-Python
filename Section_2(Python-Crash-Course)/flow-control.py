@@ -119,6 +119,14 @@ else:
     print('Inside else')
 
 # Python for vs while loops
+# The for loop is usually used when the number of iterations is known. For example,
+# this loop is iterated 4 times (0 to 3)
+for i in range(4):
+    print(i)
+
+# And while loop is usually used when the number of iterations are unknown. For example,
+# while condition:
+    # body of loop
 
 # 5. Python break and continue
 # -----------------------------
