@@ -121,4 +121,10 @@ print("List: ", languages)
 print("Total Elements: ", len(languages))    # 3
 
 # (11) Python List Comprehension
+# List comprehension is a concise and elegant way to create lists.
+# A list comprehension consists of an expression followed by the for statement inside square brackets.
+# Here is an example to make a list with each item being increasing by power of 2.
+numbers = [number*number for number in range(1, 6)]
+print(numbers)
+
 # (12) Python List Methods
