@@ -78,8 +78,24 @@ languages = ['Python', 'Swift', 'C++']
 languages[2] = 'C'
 print(languages)  # ['Python', 'Swift', 'C']
 
-
 # (7) Remove an Item From a List
+# 1. Using del()
+# In Python we can use the del statement to remove one or more items from a list. For example,
+languages = ['Python', 'Swift', 'C++', 'C', 'Java', 'Rust', 'R']
+# deleting the second item
+del languages[1]
+print(languages) # ['Python', 'C++', 'C', 'Java', 'Rust', 'R']
+# deleting the last item
+del languages[-1]
+print(languages) # ['Python', 'C++', 'C', 'Java', 'Rust']
+# delete first two items
+del languages[0 : 2]  # ['C', 'Java', 'Rust']
+print(languages)
+
+# 2. Using remove()
+# We can also use the remove() method to delete a list item. For example,
+
+
 # (8) Iterating through a List
 # (9) Check if an Item Exists in the Python List
 # (10) Python List Length
