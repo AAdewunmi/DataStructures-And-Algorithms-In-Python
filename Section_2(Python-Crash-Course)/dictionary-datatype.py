@@ -36,6 +36,12 @@ print(student_id[111])  # prints Eric
 print(student_id[113])  # prints Butters
 
 # (5) Removing elements from Dictionary
+# We use the del statement to remove an element from the dictionary. For example,
+student_id = {111: "Eric", 112: "Kyle", 113: "Butters"}
+print("Initial Dictionary: ", student_id)
+del student_id[111]
+print("Updated Dictionary ", student_id)
+
 # (6) Python Dictionary Methods
 # (7) Dictionary Membership Test
 # (8) Iterating Through a Dictionary
