@@ -34,7 +34,15 @@ var2 = ("Hello",) # tuple
 
 # (3) Access Python Tuple Elements
 # 1. Indexing
-# 2. Negative Indexing
+# We can use the index operator [] to access an item in a tuple, where the index starts from 0.
+# accessing tuple elements using indexing
+# 1. Indexing
+letters = ("p", "r", "o", "g", "r", "a", "m", "i", "z")
+print(letters[0])   # prints "p"
+print(letters[5])   # prints "a"
+
+
+
 # 3. Slicing
 # (4) Python Tuple Methods
 # (5) Iterating through a Tuple in Python
