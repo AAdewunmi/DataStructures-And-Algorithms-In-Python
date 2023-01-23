@@ -23,6 +23,12 @@ capital_city["Japan"] = "Tokyo"
 print("Updated Dictionary: ",capital_city)
 
 # (3) Change Value of Dictionary
+# We can also use [] to change the value associated with a particular key. For example,
+student_id = {111: "Eric", 112: "Kyle", 113: "Butters"}
+print("Initial Dictionary: ", student_id)
+student_id[112] = "Stan"
+print("Updated Dictionary: ", student_id)
+
 # (4) Accessing Elements from Dictionary
 # (5) Removing elements from Dictionary
 # (6) Python Dictionary Methods
