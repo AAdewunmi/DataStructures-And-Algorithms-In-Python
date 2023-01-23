@@ -63,6 +63,12 @@ print(my_tuple[7:]) # prints ('i', 'z')
 print(my_tuple[:]) # Prints ('p', 'r', 'o', 'g', 'r', 'a', 'm', 'i', 'z')
 
 # (4) Python Tuple Methods
+# In Python ,methods that add items or remove items are not available with tuple. Only the following two methods are available.
+# Some examples of Python tuple methods:
+my_tuple = ('a', 'p', 'p', 'l', 'e',)
+print(my_tuple.count('p'))  # prints 2
+print(my_tuple.index('l'))  # prints 3
+
 # (5) Iterating through a Tuple in Python
 # (6) Check if an Item Exists in the Python Tuple
 # (7) Advantages of Tuple over List in Python
