@@ -41,7 +41,13 @@ letters = ("p", "r", "o", "g", "r", "a", "m", "i", "z")
 print(letters[0])   # prints "p"
 print(letters[5])   # prints "a"
 
-
+# 2. Negative Indexing
+# Python allows negative indexing for its sequences.
+# The index of -1 refers to the last item, -2 to the second last item and so on. For example,
+# accessing tuple elements using negative indexing
+letters = ('p', 'r', 'o', 'g', 'r', 'a', 'm', 'i', 'z')
+print(letters[-1])   # prints 'z'
+print(letters[-3])   # prints 'm'
 
 # 3. Slicing
 # (4) Python Tuple Methods
