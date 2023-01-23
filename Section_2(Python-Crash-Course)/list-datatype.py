@@ -69,12 +69,19 @@ even_numbers = [4, 6, 8]
 print("List2:", even_numbers)
 # join two lists
 prime_numbers.extend(even_numbers)
-
 print("List after append:", prime_numbers)
-# The append() method adds an item at the end of the list. For example,
-# (6) Remove an Item From a List
-# (7) Iterating through a List
-# (8) Check if an Item Exists in the Python List
-# (9) Python List Length
-# (10) Python List Comprehension
-# (11) Python List Methods
+
+# (6) Change List Items
+# Python lists are mutable. Meaning lists are changeable. And, we can change items of a list by assigning new values using = operator. For example,
+languages = ['Python', 'Swift', 'C++']
+# changing the third item to 'C'
+languages[2] = 'C'
+print(languages)  # ['Python', 'Swift', 'C']
+
+
+# (7) Remove an Item From a List
+# (8) Iterating through a List
+# (9) Check if an Item Exists in the Python List
+# (10) Python List Length
+# (11) Python List Comprehension
+# (12) Python List Methods
