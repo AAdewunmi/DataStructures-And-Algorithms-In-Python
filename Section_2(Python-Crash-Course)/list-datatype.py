@@ -115,5 +115,10 @@ print('Python' in languages)    # True
 
 
 # (10) Python List Length
+# In Python, we use the len() function to find the number of elements present in a list. For example,
+languages = ['Python', 'Swift', 'C++']
+print("List: ", languages)
+print("Total Elements: ", len(languages))    # 3
+
 # (11) Python List Comprehension
 # (12) Python List Methods
