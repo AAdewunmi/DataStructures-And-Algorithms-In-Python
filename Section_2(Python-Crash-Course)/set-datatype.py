@@ -73,6 +73,12 @@ for fruit in fruits:
     print(fruit)
 
 # (7) Find Number of Set Elements
+# We can use the len() method to find the number of elements present in a Set. For example,
+even_numbers = {2,4,6,8}
+print('Set:',even_numbers)
+# find number of elements
+print('Total Elements:', len(even_numbers))
+
 # (8) Python Set Operations
 # i. Union of Two Sets
 # ii. Set Intersection
