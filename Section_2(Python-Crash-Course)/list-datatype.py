@@ -32,6 +32,16 @@ print(languages[0])   # Python
 print(languages[2])   # C++
 
 # (3) Negative Indexing in Python
+# Python allows negative indexing for its sequences. The index of -1 refers to the last item, -2 to the second last item and so on.
+# Let's see an example,
+
+languages = ["Python", "Swift", "C++"]
+# access item at index 0
+print(languages[-1])   # C++
+# access item at index 2
+print(languages[-3])   # Python
+
+
 # (4) Slicing of a Python List
 # (5) Add Elements to a Python List
 # (6) Remove an Item From a List
