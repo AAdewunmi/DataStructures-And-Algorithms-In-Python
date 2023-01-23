@@ -58,14 +58,21 @@ companies.update(tech_companies)
 print(companies)
 # Output: {'google', 'apple', 'Lacoste', 'Ralph Lauren'}
 
-# Remove an Element from a Set
-# Iterate Over a Set in Python
-# Find Number of Set Elements
-# Python Set Operations
-# 1. Union of Two Sets
-# 2. Set Intersection
-# 3. Difference between Two Sets
-# 4. Set Symmetric Difference
-# 5. Check if two sets are equal
-# Built-in Functions with Set
-# Other Python Set Methods
+# (5) Remove an Element from a Set
+# We use the discard() method to remove the specified element from a set. For example,
+languages = {'Swift', 'Java', 'Python'}
+print('Initial Set:',languages)
+# remove 'Java' from a set
+removedValue = languages.discard('Java')
+print('Set after remove():', languages)
+
+# (6) Iterate Over a Set in Python
+# (7) Find Number of Set Elements
+# (8) Python Set Operations
+# i. Union of Two Sets
+# ii. Set Intersection
+# iii. Difference between Two Sets
+# iv. Set Symmetric Difference
+# v. Check if two sets are equal
+# (9) Built-in Functions with Set
+# (10) Other Python Set Methods
