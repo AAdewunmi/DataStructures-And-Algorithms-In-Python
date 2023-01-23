@@ -50,6 +50,18 @@ print(letters[-1])   # prints 'z'
 print(letters[-3])   # prints 'm'
 
 # 3. Slicing
+# We can access a range of items in a tuple by using the slicing operator colon :.
+# accessing tuple elements using slicing
+my_tuple = ('p', 'r', 'o', 'g', 'r', 'a', 'm', 'i', 'z')
+# elements 2nd to 4th index
+print(my_tuple[1:4])  #  prints ('r', 'o', 'g')
+# elements beginning to 2nd
+print(my_tuple[:-7]) # prints ('p', 'r')
+# elements 8th to end
+print(my_tuple[7:]) # prints ('i', 'z')
+# elements beginning to end
+print(my_tuple[:]) # Prints ('p', 'r', 'o', 'g', 'r', 'a', 'm', 'i', 'z')
+
 # (4) Python Tuple Methods
 # (5) Iterating through a Tuple in Python
 # (6) Check if an Item Exists in the Python Tuple
