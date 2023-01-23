@@ -53,6 +53,11 @@ print(2 not in squares) # prints True
 print(49 in squares) # prints false
 
 # (7) Iterating Through a Dictionary
+# We can iterate through each key in a dictionary using a for loop.
+# Iterating through a Dictionary
+squares = {1: 1, 3: 9, 5: 25, 7: 49, 9: 81}
+for i in squares:
+    print(squares[i])
 
 # (8) Python Dictionary Methods
 # Methods that are available with a dictionary are tabulated below. Some of them have already been used in the above examples.
