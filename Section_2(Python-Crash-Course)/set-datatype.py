@@ -105,6 +105,16 @@ print('Intersection using &:', A & B)
 print('Intersection using intersection():', A.intersection(B))
 
 # iii. Difference between Two Sets
+# We use the - operator or the difference() method to perform the difference between two sets. For example,
+# first set
+A = {2, 3, 5}
+# second set
+B = {1, 2, 6}
+# perform difference operation using &
+print('Difference using &:', A - B)
+# perform difference operation using difference()
+print('Difference using difference():', A.difference(B))
+
 # iv. Set Symmetric Difference
 # v. Check if two sets are equal
 # (9) Built-in Functions with Set
