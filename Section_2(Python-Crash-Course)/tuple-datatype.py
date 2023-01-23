@@ -70,5 +70,11 @@ print(my_tuple.count('p'))  # prints 2
 print(my_tuple.index('l'))  # prints 3
 
 # (5) Iterating through a Tuple in Python
+# We can use the for loop to iterate over the elements of a tuple. For example,
+languages = ('Python', 'Swift', 'C++')
+# iterating through the tuple
+for language in languages:
+    print(language)
+
 # (6) Check if an Item Exists in the Python Tuple
 # (7) Advantages of Tuple over List in Python
