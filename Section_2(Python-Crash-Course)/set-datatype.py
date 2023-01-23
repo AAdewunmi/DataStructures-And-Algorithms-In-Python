@@ -67,6 +67,11 @@ removedValue = languages.discard('Java')
 print('Set after remove():', languages)
 
 # (6) Iterate Over a Set in Python
+fruits = {"Apple", "Peach", "Mango"}
+# for loop to access each fruits
+for fruit in fruits:
+    print(fruit)
+
 # (7) Find Number of Set Elements
 # (8) Python Set Operations
 # i. Union of Two Sets
