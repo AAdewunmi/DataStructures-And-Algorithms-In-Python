@@ -108,6 +108,12 @@ for language in languages:
 
 
 # (9) Check if an Item Exists in the Python List
+# We use the in keyword to check if an item exists in the list or not. For example,
+languages = ['Python', 'Swift', 'C++']
+print('C' in languages)    # False
+print('Python' in languages)    # True
+
+
 # (10) Python List Length
 # (11) Python List Comprehension
 # (12) Python List Methods
