@@ -94,7 +94,10 @@ print(languages)
 
 # 2. Using remove()
 # We can also use the remove() method to delete a list item. For example,
-
+languages = ['Python', 'Swift', 'C++', 'C', 'Java', 'Rust', 'R']
+# remove 'Python' from the list
+languages.remove('Python')
+print(languages) # ['Swift', 'C++', 'C', 'Java', 'Rust', 'R']
 
 # (8) Iterating through a List
 # (9) Check if an Item Exists in the Python List
