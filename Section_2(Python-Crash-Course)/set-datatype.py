@@ -81,6 +81,7 @@ print('Total Elements:', len(even_numbers))
 
 # (8) Python Set Operations
 # Python Set provides different built-in methods to perform mathematical set operations like union, intersection, subtraction, and symmetric difference.
+
 # i. Union of Two Sets
 # We use the | operator or the union() method to perform the set union operation. For example,
 # first set
@@ -92,8 +93,17 @@ print('Union using |:', A | B)
 # perform union operation using union()
 print('Union using union():', A.union(B))
 
-
 # ii. Set Intersection
+# In Python, we use the & operator or the intersection() method to perform the set intersection operation. For example,
+# first set
+A = {1, 3, 5}
+# second set
+B = {1, 2, 3}
+# perform intersection operation using &
+print('Intersection using &:', A & B)
+# perform intersection operation using intersection()
+print('Intersection using intersection():', A.intersection(B))
+
 # iii. Difference between Two Sets
 # iv. Set Symmetric Difference
 # v. Check if two sets are equal
