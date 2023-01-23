@@ -43,6 +43,19 @@ print(languages[-3])   # Python
 
 
 # (4) Slicing of a Python List
+# In Python it is possible to access a section of items from the list using the slicing operator :, not just a single item. For example,
+# List slicing in Python
+
+my_list = ['p','r','o','g','r','a','m','i','z']
+# items from index 2 to index 4
+print(my_list[2:5])
+# items from index 5 to end
+print(my_list[5:])
+# items beginning to end
+print(my_list[:])
+
+
+
 # (5) Add Elements to a Python List
 # (6) Remove an Item From a List
 # (7) Iterating through a List
