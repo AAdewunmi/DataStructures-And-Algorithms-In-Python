@@ -27,6 +27,11 @@ my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
 print(my_tuple)
 
 # (2) Create a Python Tuple With one Element
+# In Python, creating a tuple with one element is a bit tricky. Having one element within parentheses is not enough.
+# We will need a trailing comma to indicate that it is a tuple,
+var1 = ("Hello") # string
+var2 = ("Hello",) # tuple
+
 # (3) Access Python Tuple Elements
 # 1. Indexing
 # 2. Negative Indexing
