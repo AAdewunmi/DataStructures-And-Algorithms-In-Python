@@ -42,6 +42,30 @@ print("Initial Dictionary: ", student_id)
 del student_id[111]
 print("Updated Dictionary ", student_id)
 
-# (6) Python Dictionary Methods
-# (7) Dictionary Membership Test
-# (8) Iterating Through a Dictionary
+# (6) Dictionary Membership Test
+# (7) Iterating Through a Dictionary
+# (8) Python Dictionary Methods
+# Methods that are available with a dictionary are tabulated below. Some of them have already been used in the above examples.
+# Function
+# 					Description
+#
+# all()
+# 					Return True if all keys of the dictionary are True (or if the dictionary is empty).
+#
+# any()
+# 					Return True if any key of the dictionary is true. If the dictionary is empty, return False.
+#
+# len()
+# 					Return the length (the number of items) in the dictionary.
+#
+# sorted()
+# 					Return a new sorted list of keys in the dictionary.
+#
+# clear()
+# 					Removes all items from the dictionary.
+#
+# keys()
+# 					Returns a new object of the dictionary's keys.
+#
+# values()
+# 					Returns a new object of the dictionary's values
