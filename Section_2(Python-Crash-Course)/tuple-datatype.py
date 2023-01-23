@@ -77,4 +77,9 @@ for language in languages:
     print(language)
 
 # (6) Check if an Item Exists in the Python Tuple
+# We use the in keyword to check if an item exists in the tuple or not. For example,
+languages = ('Python', 'Swift', 'C++')
+print('C' in languages)    # False
+print('Python' in languages)    # True
+
 # (7) Advantages of Tuple over List in Python
