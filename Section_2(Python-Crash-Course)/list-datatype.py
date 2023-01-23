@@ -100,6 +100,13 @@ languages.remove('Python')
 print(languages) # ['Swift', 'C++', 'C', 'Java', 'Rust', 'R']
 
 # (8) Iterating through a List
+# We can use the for loop to iterate over the elements of a list. For example,
+languages = ['Python', 'Swift', 'C++']
+# iterating through the list
+for language in languages:
+    print(language)
+
+
 # (9) Check if an Item Exists in the Python List
 # (10) Python List Length
 # (11) Python List Comprehension
