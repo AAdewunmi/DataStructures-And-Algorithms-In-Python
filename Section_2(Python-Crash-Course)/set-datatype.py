@@ -116,6 +116,17 @@ print('Difference using &:', A - B)
 print('Difference using difference():', A.difference(B))
 
 # iv. Set Symmetric Difference
-# v. Check if two sets are equal
+# In Python, we use the ^ operator or the symmetric_difference() method to perform symmetric difference between two sets. For example,
+# first set
+A = {2, 3, 5}
+# second set
+B = {1, 2, 6}
+# perform difference operation using &
+print('using ^:', A ^ B)
+# using symmetric_difference()
+print('using symmetric_difference():', A.symmetric_difference(B))
+
+
+
 # (9) Built-in Functions with Set
 # (10) Other Python Set Methods
