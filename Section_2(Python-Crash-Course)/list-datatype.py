@@ -54,9 +54,17 @@ print(my_list[5:])
 # items beginning to end
 print(my_list[:])
 
-
-
 # (5) Add Elements to a Python List
+# Python List provides different methods to add items to a list.
+# 1. Using append()
+numbers = [21, 34, 54, 12]
+print("Before Append:", numbers)
+# using append method
+numbers.append(32)
+print("After Append:", numbers)
+#
+
+# The append() method adds an item at the end of the list. For example,
 # (6) Remove an Item From a List
 # (7) Iterating through a List
 # (8) Check if an Item Exists in the Python List
