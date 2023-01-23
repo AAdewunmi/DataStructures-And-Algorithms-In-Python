@@ -39,7 +39,24 @@ numbers = {2, 4, 6, 6, 2, 8}
 print(numbers)   # {8, 2, 4, 6}
 # Here, we can see there are no duplicate items in the set as a set cannot contain duplicates.
 
+# (4) Add and Update Set Items in Python
+# Sets are mutable. However, since they are unordered, indexing has no meaning.
+# We cannot access or change an element of a set using indexing or slicing. Set data type does not support it.
+# i. Add Items to a Set in Python
+# In Python, we use the add() method to add an item to a set. For example,
+numbers = {21, 34, 54, 12}
+print('Initial Set:',numbers)
+# using add() method
+numbers.add(32)
+print('Updated Set:', numbers)
 
+# ii. Update Python Set
+# The update() method is used to update the set with items other collection types (lists, tuples, sets, etc). For example,
+companies = {'Lacoste', 'Ralph Lauren'}
+tech_companies = ['apple', 'google', 'apple']
+companies.update(tech_companies)
+print(companies)
+# Output: {'google', 'apple', 'Lacoste', 'Ralph Lauren'}
 
 # Remove an Element from a Set
 # Iterate Over a Set in Python
