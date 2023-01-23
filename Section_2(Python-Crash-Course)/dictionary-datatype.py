@@ -16,6 +16,12 @@ numbers = {1: "One", 2: "Two", 3: "Three"}
 print(numbers)
 
 # (2) Add Elements to a Python Dictionary
+# We can add elements to a dictionary using the name of the dictionary with []. For example,
+capital_city = {"Nepal": "Kathmandu", "England": "London"}
+print("Initial Dictionary: ",capital_city)
+capital_city["Japan"] = "Tokyo"
+print("Updated Dictionary: ",capital_city)
+
 # (3) Change Value of Dictionary
 # (4) Accessing Elements from Dictionary
 # (5) Removing elements from Dictionary
