@@ -7,7 +7,7 @@
 # Set Definition: Sets are used to store multiple items in a single variable. It has the following characteristics:
 # Set items are unordered, unchangeable, and do not allow duplicate values.
 
-# Create a Set in Python
+# (1) Create a Set in Python
 # In Python, we create sets by placing all the elements inside curly braces {}, separated by comma.
 # A set can have any number of items and they may be of different types (integer, float, tuple, string etc.). But a set cannot have mutable elements like lists, sets or dictionaries as its elements.
 # Let's see an example,
@@ -21,7 +21,7 @@ print('Vowel Letters:', vowel_letters)
 mixed_set = {'Hello', 101, -2, 'Bye'}
 print('Set of mixed data types:', mixed_set)
 
-# Create an Empty Set in Python
+# (2) Create an Empty Set in Python
 # Creating an empty set is a bit tricky. Empty curly braces {} will make an empty dictionary in Python.
 # To make a set without any elements, we use the set() function without any argument. For example,
 # create an empty set
@@ -33,11 +33,14 @@ print('Data type of empty_set:', type(empty_set))
 # check data type of dictionary_set
 print('Data type of empty_dictionary', type(empty_dictionary))
 
+# (3) Duplicate Items in a Set
+# Let's see what will happen if we try to include duplicate items in a set.
+numbers = {2, 4, 6, 6, 2, 8}
+print(numbers)   # {8, 2, 4, 6}
+# Here, we can see there are no duplicate items in the set as a set cannot contain duplicates.
 
-# Duplicate Items in a Set
-# Add and Update Set Items in Python
-# 1. Add Items to a Set in Python
-# 2. Update Python Set
+
+
 # Remove an Element from a Set
 # Iterate Over a Set in Python
 # Find Number of Set Elements
