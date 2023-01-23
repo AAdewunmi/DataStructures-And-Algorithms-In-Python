@@ -22,6 +22,18 @@ mixed_set = {'Hello', 101, -2, 'Bye'}
 print('Set of mixed data types:', mixed_set)
 
 # Create an Empty Set in Python
+# Creating an empty set is a bit tricky. Empty curly braces {} will make an empty dictionary in Python.
+# To make a set without any elements, we use the set() function without any argument. For example,
+# create an empty set
+empty_set = set()
+# create an empty dictionary
+empty_dictionary = { }
+# check data type of empty_set
+print('Data type of empty_set:', type(empty_set))
+# check data type of dictionary_set
+print('Data type of empty_dictionary', type(empty_dictionary))
+
+
 # Duplicate Items in a Set
 # Add and Update Set Items in Python
 # 1. Add Items to a Set in Python

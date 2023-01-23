@@ -1,7 +1,7 @@
 # Python Tuple Datatype
 # ========================
 # Adapted From: Programiz
-# Tutorial Title: Python List Datatype
+# Tutorial Title: Python Tuple Datatype
 # URL: https://www.programiz.com/python-programming
 
 # Tuple Definition: Tuples are used to store multiple items in a single variable. It has the following characteristics:
