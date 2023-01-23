@@ -43,7 +43,17 @@ del student_id[111]
 print("Updated Dictionary ", student_id)
 
 # (6) Dictionary Membership Test
+# We can test if a key is in a dictionary or not using the keyword in. Notice that the membership test is only for the keys and not for the values.
+# Membership Test for Dictionary Keys
+squares = {1: 1, 3: 9, 5: 25, 7: 49, 9: 81}
+# Output: True
+print(1 in squares) # prints True
+print(2 not in squares) # prints True
+# membership tests for key only not value
+print(49 in squares) # prints false
+
 # (7) Iterating Through a Dictionary
+
 # (8) Python Dictionary Methods
 # Methods that are available with a dictionary are tabulated below. Some of them have already been used in the above examples.
 # Function
