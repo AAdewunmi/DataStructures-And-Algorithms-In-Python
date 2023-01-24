@@ -104,6 +104,6 @@ finally:
 with open("test2.txt", "w") as file2:
     # write contents to the test2.txt file
     file2.write('Programming is Fun.')
-    file2.write('Programiz for beginners')
+    file2.write('Programiz for beginners and enthusiasts of programming!')
 
 # (7) Python File Methods
