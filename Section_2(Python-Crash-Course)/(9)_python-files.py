@@ -43,6 +43,13 @@ file1 = open("test.txt", "r")
 # file1 = open("img.bmp",'r+b') # read and write in binary mode
 
 # (2) Reading Files in Python
+#  After we open a file, we use the read() method to read its contents. For example,
+# open a file
+file1 = open("test.txt", "r")
+# read the file
+read_content = file1.read()
+print(read_content)
+
 # (3) Closing Files in Python
 # (4) Exception Handling in Files
 # (5) Use of with...open Syntax
