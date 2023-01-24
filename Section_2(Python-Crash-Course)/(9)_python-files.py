@@ -54,14 +54,25 @@ file1 = open("test.txt", "r")
 # Closing a file will free up the resources that were tied with the file.
 # It is done using the close() method in Python. For example,
 # open a file
-file1 = open("test.txt", "r")
+# file1 = open("test.txt", "r")
 # read the file
-read_content = file1.read()
-print(read_content)
+# read_content = file1.read()
+# print(read_content)
 # close the file
-file1.close()
+# file1.close()
 
 # (4) Exception Handling in Files
+# If an exception occurs when we are performing some operation with the file,
+# the code exits without closing the file. A safer way is to use a try...finally block.
+# Let's see an example,
+try:
+    file1 = open("test.txt", "r")
+    read_content = file1.read()
+    print(read_content)
+finally:
+    # close the file
+    file1.close()
+
 # (5) Use of with...open Syntax
 # (6) Writing to Files in Python
 # (7) Python File Methods
