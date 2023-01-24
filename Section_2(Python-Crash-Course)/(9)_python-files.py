@@ -98,5 +98,12 @@ try:
         print(read_content)
 finally:
     print("Text read!")
+
 # - Create file, then write to it
+# Suppose, we don't have a file named test2.txt. Let's see what happens if we write contents to the test2.txt file.
+with open("test2.txt", "w") as file2:
+    # write contents to the test2.txt file
+    file2.write('Programming is Fun.')
+    file2.write('Programiz for beginners')
+
 # (7) Python File Methods
