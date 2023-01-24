@@ -45,12 +45,22 @@ file1 = open("test.txt", "r")
 # (2) Reading Files in Python
 #  After we open a file, we use the read() method to read its contents. For example,
 # open a file
+# file1 = open("test.txt", "r")
+# read the file
+# read_content = file1.read()
+# print(read_content)
+
+# (3) Closing Files in Python
+# Closing a file will free up the resources that were tied with the file.
+# It is done using the close() method in Python. For example,
+# open a file
 file1 = open("test.txt", "r")
 # read the file
 read_content = file1.read()
 print(read_content)
+# close the file
+file1.close()
 
-# (3) Closing Files in Python
 # (4) Exception Handling in Files
 # (5) Use of with...open Syntax
 # (6) Writing to Files in Python
