@@ -1,2 +1,6 @@
 This is a test file.
-Hello from the test file.
+Hello from the test file.More text added to fileMore text added to fileMore text added to file1_More text added to file
+2_More text added to file
+£More text added to file1_More text added to file
+2_More text added to file
+3_More text added to file

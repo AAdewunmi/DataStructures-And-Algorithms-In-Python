@@ -75,12 +75,28 @@ file1 = open("test.txt", "r")
 
 # (5) Use of with...open Syntax
 # In Python, we can use the with...open syntax to automatically close the file. For example,
+# try:
+#     with open("test.txt", "r") as file1:
+#         read_content = file1.read()
+#         print(read_content)
+# finally:
+#     print("File has been read!")
+
+# (6) Writing to Files in Python
+# - Write to an existing file
+try:
+    with open("test.txt", "a") as file1:
+        write_strings = file1.write("1_More text added to file\n"
+                                    "2_More text added to file\n"
+                                    "3_More text added to file")
+finally:
+    print("Text added to file!")
+# - Read from existing file
 try:
     with open("test.txt", "r") as file1:
         read_content = file1.read()
         print(read_content)
 finally:
-    print("File has been read!")
-
-# (6) Writing to Files in Python
+    print("Text read!")
+# - Create file, then write to it
 # (7) Python File Methods
