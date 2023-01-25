@@ -72,6 +72,21 @@ study_room.breadth = 30.8
 study_room.calculate_area()
 
 # (6) Python Constructors
+#  We can also initialize values using the constructors. For example,
+class Bike:
+    # constructor function
+    def __init__(self, name="", gear=0):
+        self.name = name
+        self.gear = gear
+# create bicycle objects
+bike1 = Bike("Mountain Bike", 11)
+bike2 = Bike("City Bike", 6)
+# print objects
+def print_object_details(bike):
+    print(f"Name: {bike.name}, Gears: {bike.gear}")
+print_object_details(bike1)
+print_object_details(bike2)
+
 # (7) Python Inheritance
 # (8) Python Encapsulation
 # (9) Python Polymorphism
