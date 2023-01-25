@@ -53,6 +53,24 @@ employee1.employee_id = 1002
 print(f"Employee ID: {employee1.employee_id}")
 
 # (5) Python Methods
+# We can also define a function inside a Python class.
+# A Python Function defined inside a class is called a method.
+# Let's see an example,
+# create a class
+class Room:
+    length = 0.0
+    breadth = 0.0
+    # method to calculate area
+    def calculate_area(self):
+        print("Area of Room = ", self.length * self.breadth)
+# create object of Room class
+study_room = Room()
+# assign values to all the attributes
+study_room.length = 42.5
+study_room.breadth = 30.8
+# access method inside class
+study_room.calculate_area()
+
 # (6) Python Constructors
 # (7) Python Inheritance
 # (8) Python Encapsulation
