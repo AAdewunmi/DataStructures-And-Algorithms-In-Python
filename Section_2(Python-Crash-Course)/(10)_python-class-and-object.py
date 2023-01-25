@@ -78,14 +78,14 @@ class Bike:
     def __init__(self, name="", gear=0):
         self.name = name
         self.gear = gear
+    def print_bicycle_details(self):
+        print(f"Name: {self.name}, Gears: {self.gear}")
 # create bicycle objects
 bike1 = Bike("Mountain Bike", 11)
 bike2 = Bike("City Bike", 6)
 # print objects
-def print_object_details(bike):
-    print(f"Name: {bike.name}, Gears: {bike.gear}")
-print_object_details(bike1)
-print_object_details(bike2)
+bike1.print_bicycle_details()
+bike2.print_bicycle_details()
 
 # (7) Python Inheritance
 # Inheritance is a way of creating a new class for using details of an existing class without modifying it.
@@ -110,4 +110,23 @@ dog1.sleep()
 dog1.bark();
 
 # (8) Python Encapsulation
+# Encapsulation is one of the key features of object-oriented programming. Encapsulation refers to the bundling of attributes and methods inside a single class.
+# It prevents outer classes from accessing and changing attributes and methods of a class. This also helps to achieve data hiding.
+# In Python, we denote private attributes using underscore as the prefix i.e. single _ or double __. For example,
+class Computer:
+    def __init__(self):
+        self.__maxprice = 900
+    def sell(self):
+        print("Selling Price: {}".format(self.__maxprice))
+    def setMaxPrice(self, price):
+        self.__maxprice = price
+c = Computer()
+c.sell()
+# change the price
+c.__maxprice = 1000
+c.sell()
+# using setter function
+c.setMaxPrice(1050)
+c.sell()
+
 # (9) Python Polymorphism
