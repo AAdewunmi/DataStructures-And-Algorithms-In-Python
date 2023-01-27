@@ -30,6 +30,14 @@ def greet():
     print('Hello World!')
 
 # Calling a Function in Python
+# To use a function, we need to call it.
+# For example,
+def greet():
+    print('Hello World!')
+# call the function
+greet()
+print('Outside function')
+
 # Example 1: Python Function
 # Python Function Arguments
 # Example 2: Python Function Arguments
