@@ -40,16 +40,23 @@ print('Outside function')
 
 # Python Function Arguments
 # As mentioned earlier, a function can also have arguments. An argument is a value that is accepted by a function. For example,
-# Example 1: Python Function
-# function with two arguments
+# Example 1: Python Function (function with two arguments)
 def add_numbers(num1, num2):
     sum = num1 + num2
     print("Sum: ",sum)
 # function call with two values
 add_numbers(5, 4)
 
-# Example 2: Python Function Arguments
-# The return Statement in Python
+# Example 2: Python Function Arguments (The return Statement in Python)
+# A Python function may or may not return a value. If we want our function to return some value to a function call, we use the return statement. For example,
+# function definition
+def find_square(num):
+    result = num * num
+    return result
+# function call
+square = find_square(3)
+print('Square:',square)
+
 # Example 3: Function return Type
 # Example 4: Add Two Numbers
 # Python Library Functions
