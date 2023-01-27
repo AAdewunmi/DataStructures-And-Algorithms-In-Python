@@ -76,3 +76,15 @@ power = pow(2, 3)
 print("2 to the power 3 is ", power)
 
 # Benefits of Using Functions
+# 1. Code Reusable - We can use the same function multiple times in our program which makes our code reusable. For example,
+# function definition
+def get_square(num):
+    return num * num
+for i in [1,2,3]:
+    # function call
+    result = get_square(i)
+    print('Square of',i, '=',result)
+# In the above example, we have created the function named get_square() to calculate the square of a number. Here, the function is used to calculate the square of numbers from 1 to 3.
+# Hence, the same method is used again and again.
+
+# 2. 2. Code Readability - Functions help us break our code into chunks to make our program readable and easy to understand.
