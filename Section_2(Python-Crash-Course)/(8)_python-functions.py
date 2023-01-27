@@ -57,8 +57,22 @@ def find_square(num):
 square = find_square(5)
 print('Square:',square)
 
-# Example 3: Function return Type
-# Example 4: Add Two Numbers
 # Python Library Functions
-# Example 5: Python Library Function
+# In Python, standard library functions are the built-in functions that can be used directly in our program. For example,
+#
+#     print() - prints the string inside the quotation marks
+#     sqrt() - returns the square root of a number
+#     pow() - returns the power of a number
+#
+# These library functions are defined inside the module. And, to use them we must include the module inside our program.
+#
+# For example, sqrt() is defined inside the math module.
+import math
+# sqrt computes the square root
+square_root = math.sqrt(4)
+print("Square Root of 4 is ", square_root)
+# pow() computes the power
+power = pow(2, 3)
+print("2 to the power 3 is ", power)
+
 # Benefits of Using Functions
