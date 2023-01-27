@@ -38,8 +38,16 @@ def greet():
 greet()
 print('Outside function')
 
-# Example 1: Python Function
 # Python Function Arguments
+# As mentioned earlier, a function can also have arguments. An argument is a value that is accepted by a function. For example,
+# Example 1: Python Function
+# function with two arguments
+def add_numbers(num1, num2):
+    sum = num1 + num2
+    print("Sum: ",sum)
+# function call with two values
+add_numbers(5, 4)
+
 # Example 2: Python Function Arguments
 # The return Statement in Python
 # Example 3: Function return Type
