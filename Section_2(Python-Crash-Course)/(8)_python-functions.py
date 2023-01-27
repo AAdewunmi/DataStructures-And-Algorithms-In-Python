@@ -54,7 +54,7 @@ def find_square(num):
     result = num * num
     return result
 # function call
-square = find_square(3)
+square = find_square(5)
 print('Square:',square)
 
 # Example 3: Function return Type
