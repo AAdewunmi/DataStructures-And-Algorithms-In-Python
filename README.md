@@ -11,9 +11,9 @@ adapted from a course on Udemy.
 
 ## 2. Outline:
 
-- [Section 1: Python Crash Course](Section_2(Python-Crash-Course)/)
+- [Section 1: Python Crash Course](Section_1(Python-Crash-Course)/)
 
-- Section 2: Searching Algorithms
+- [Section 2: Searching Algorithms](Section_2(Search-Algorithms)/)
 
 - Section 3: Sorting Algorithms
 
