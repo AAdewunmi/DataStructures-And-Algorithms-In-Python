@@ -6,7 +6,7 @@ An Implementation of Data Structures And Algorithms In Python
 
 ## 1. What is the project?
 
-This repository contains an implemention of various Data Structures and Algorithms using Python programming language, 
+This repository contains an implementation of various Data Structures and Algorithms using Python programming language, 
 adapted from a course on Udemy.
 
 ## 2. Outline:
