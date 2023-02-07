@@ -24,5 +24,16 @@
 #   A List grows as per the program's demand and limited to the available memory space.
 
 
-# (2). Creating Node of Linked List
+# (2). Implement Node Class
+class _Node:
+    __slots__ = '_element', '_next'
 
+    def __init__(self, element, next):
+        self._element = element
+        self._next = next
+
+              #Head                                #Tail
+# Linked List [7][] -> [4][] -> [12][] -> [8][] -> [3][Null]
+
+n1 = _Node(7, None)  # n1._element = 7, n1._next = None (Link to n2)
+n2 = _Node(4, None)  # n2._element = 4, n2._next = None
