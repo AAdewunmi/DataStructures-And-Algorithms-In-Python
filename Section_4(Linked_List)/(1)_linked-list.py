@@ -55,7 +55,7 @@ class LinkedList:
     def is_empty(self):
         return self._size == 0
 
-    # Add Nodes to the Linked List
+    # Add Nodes to the back of the Linked List
     def add_last(self, e):
         newest = _Node(e, None)
         if self.is_empty():
@@ -74,6 +74,7 @@ class LinkedList:
         print()
 
 # (4). Implement search()
+    # Search for an element in a Linked List
     def search(self, key):
         p = self._head
         index = 0
@@ -83,6 +84,18 @@ class LinkedList:
             p = p._next
             index += 1
         return -1
+
+# (5). Implement addfirst()
+    # Add Nodes to the front of the Linked List
+    def add_first(self, key):
+        newest = _Node(key, None)
+        if self.is_empty():
+            self._head = newest
+            self._tail = newest
+        else:
+            newest._next = self._head
+            self._head = newest
+        self._size += 1
 
 
 LinkedList = LinkedList()
@@ -98,3 +111,12 @@ LinkedList.display()
 print('Size: ', LinkedList.__len__())
 i = LinkedList.search(7)
 print('Index: ', i)
+LinkedList.add_first(15)
+LinkedList.display()
+print('Size: ', LinkedList.__len__())
+LinkedList.add_first(23)
+LinkedList.display()
+print('Size: ', LinkedList.__len__())
+LinkedList.add_last(99)
+LinkedList.display()
+print('Size: ', LinkedList.__len__())
