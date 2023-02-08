@@ -97,6 +97,20 @@ class LinkedList:
             self._head = newest
         self._size += 1
 
+# (6). Implement addany()
+# Add Nodes to any position in a Linked List
+    def add_any(self, key, position):
+        newest = _Node(key, None)
+        p = self._head
+        i = 1
+        while i < position - 1:
+            p = p._next
+            i = i + 1
+        newest._next = p._next
+        p._next = newest
+        self._size += 1
+
+
 
 LinkedList = LinkedList()
 LinkedList.add_last(7)
@@ -118,5 +132,11 @@ LinkedList.add_first(23)
 LinkedList.display()
 print('Size: ', LinkedList.__len__())
 LinkedList.add_last(99)
+LinkedList.display()
+print('Size: ', LinkedList.__len__())
+LinkedList.add_any(20, 3)
+LinkedList.display()
+print('Size: ', LinkedList.__len__())
+LinkedList.add_any(100, 5)
 LinkedList.display()
 print('Size: ', LinkedList.__len__())
