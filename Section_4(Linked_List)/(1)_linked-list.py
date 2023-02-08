@@ -73,6 +73,17 @@ class LinkedList:
             p = p._next
         print()
 
+# (4). Implement search()
+    def search(self, key):
+        p = self._head
+        index = 0
+        while p:
+            if p._element == key:
+                return index
+            p = p._next
+            index += 1
+        return -1
+
 
 LinkedList = LinkedList()
 LinkedList.add_last(7)
@@ -85,5 +96,5 @@ LinkedList.add_last(22)
 LinkedList.add_last(18)
 LinkedList.display()
 print('Size: ', LinkedList.__len__())
-
-
+i = LinkedList.search(7)
+print('Index: ', i)
