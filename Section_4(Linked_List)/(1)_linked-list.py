@@ -37,3 +37,53 @@ class _Node:
 
 n1 = _Node(7, None)  # n1._element = 7, n1._next = None (Link to n2)
 n2 = _Node(4, None)  # n2._element = 4, n2._next = None
+
+
+# (3). Implement a Linked List
+class LinkedList:
+    # Constructor
+    def __init__(self):
+        self._head = None
+        self._tail = None
+        self._size = 0
+
+    # Find length of the Linked List
+    def __len__(self):
+        return self._size
+
+    # Check whether Linked List is empty
+    def is_empty(self):
+        return self._size == 0
+
+    # Add Nodes to the Linked List
+    def add_last(self, e):
+        newest = _Node(e, None)
+        if self.is_empty():
+            self._head = newest
+        else:
+            self._tail._next = newest
+        self._tail = newest
+        self._size += 1
+
+    # Traverse the Linked List and display elements
+    def display(self):
+        p = self._head
+        while p:
+            print(p._element, end=' --> ')
+            p = p._next
+        print()
+
+
+LinkedList = LinkedList()
+LinkedList.add_last(7)
+LinkedList.add_last(4)
+LinkedList.add_last(12)
+LinkedList.add_last(9)
+LinkedList.display()
+print('Size: ', LinkedList.__len__())
+LinkedList.add_last(22)
+LinkedList.add_last(18)
+LinkedList.display()
+print('Size: ', LinkedList.__len__())
+
+
