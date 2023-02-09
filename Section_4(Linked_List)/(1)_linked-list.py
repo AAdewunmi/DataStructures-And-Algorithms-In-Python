@@ -110,33 +110,46 @@ class LinkedList:
         p._next = newest
         self._size += 1
 
+# (7). Implement removefirst()
+# Remove an element from the beginning of a Linked List
+    def remove_first(self):
+        if self.is_empty():
+            print('List is empty')
+            return
+        e = self._head._element
+        self._head = self._head._next
+        self._size -= 1
+        if self.is_empty():
+            self._tail = None
+        return e
+
+
+#==========
+# Test Linked List Class
+#==========
 
 
 LinkedList = LinkedList()
 LinkedList.add_last(7)
 LinkedList.add_last(4)
-LinkedList.add_last(12)
-LinkedList.add_last(9)
 LinkedList.display()
-print('Size: ', LinkedList.__len__())
-LinkedList.add_last(22)
-LinkedList.add_last(18)
-LinkedList.display()
-print('Size: ', LinkedList.__len__())
+print('Size :', LinkedList.__len__())
 i = LinkedList.search(7)
 print('Index: ', i)
 LinkedList.add_first(15)
 LinkedList.display()
-print('Size: ', LinkedList.__len__())
+print('Size :', LinkedList.__len__())
 LinkedList.add_first(23)
 LinkedList.display()
-print('Size: ', LinkedList.__len__())
-LinkedList.add_last(99)
-LinkedList.display()
-print('Size: ', LinkedList.__len__())
+print('Size :', LinkedList.__len__())
 LinkedList.add_any(20, 3)
 LinkedList.display()
-print('Size: ', LinkedList.__len__())
+print('Size :', LinkedList.__len__())
 LinkedList.add_any(100, 5)
 LinkedList.display()
-print('Size: ', LinkedList.__len__())
+print('Size :', LinkedList.__len__())
+i = LinkedList.remove_first()
+print('Element removed: ', i)
+LinkedList.display()
+print('Size :', LinkedList.__len__())
+
