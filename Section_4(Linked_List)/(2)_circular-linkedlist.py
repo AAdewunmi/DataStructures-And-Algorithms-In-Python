@@ -32,3 +32,16 @@ class CircularLinkedList:
 
     def is_empty(self):
         return self._size == 0
+
+# (2). Implement addlast()
+# Implement add element to end of Circular Linked List
+    def add_last(self, e):
+        newest = _Node(e, None)
+        if self.is_empty():
+            newest._next = newest
+            self._head = newest
+        else:
+            newest._next = self._tail._next
+            self._tail._next = newest
+        self._tail = newest
+        self._size += 1
