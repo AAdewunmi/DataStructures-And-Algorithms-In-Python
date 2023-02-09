@@ -141,6 +141,19 @@ class LinkedList:
         self._size -= 1
         return e
 
+# (9). Implement removeany
+# Remove an element at any position in a Linked List
+    def remove_any(self, position):
+        p = self._head
+        i = 1
+        while i < position - 1:
+            p = p._next
+            i = i + 1
+        e = p._next._element
+        p._next = p._next._next
+        self._size -= 1
+        return e
+
 #==========
 # Test Linked List Class
 #==========
@@ -170,6 +183,10 @@ print('Element removed: ', i)
 LinkedList.display()
 print('Size :', LinkedList.__len__())
 i = LinkedList.remove_last()
+print('Element removed: ', i)
+LinkedList.display()
+print('Size :', LinkedList.__len__())
+i = LinkedList.remove_any(3)
 print('Element removed: ', i)
 LinkedList.display()
 print('Size :', LinkedList.__len__())
