@@ -123,6 +123,23 @@ class LinkedList:
             self._tail = None
         return e
 
+# (8). Implement removelast()
+# Remove an element from the end of a Linked List
+    def remove_last(self):
+        if self.is_empty():
+            print('List is empty')
+            return
+        p = self._head
+        i = 1
+        while i < len(self) - 1:
+            p = p._next
+            i = i + 1
+        self._tail = p
+        p = p._next
+        e = p._element
+        self._tail._next = None
+        self._size -= 1
+        return e
 
 #==========
 # Test Linked List Class
@@ -149,6 +166,10 @@ LinkedList.add_any(100, 5)
 LinkedList.display()
 print('Size :', LinkedList.__len__())
 i = LinkedList.remove_first()
+print('Element removed: ', i)
+LinkedList.display()
+print('Size :', LinkedList.__len__())
+i = LinkedList.remove_last()
 print('Element removed: ', i)
 LinkedList.display()
 print('Size :', LinkedList.__len__())
