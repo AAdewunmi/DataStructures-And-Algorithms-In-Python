@@ -45,3 +45,23 @@ class CircularLinkedList:
             self._tail._next = newest
         self._tail = newest
         self._size += 1
+
+# (3). Implement display()
+# Implement display all elements in a Circular Linked List
+    def display(self):
+        p = self._head
+        i = 0
+        while i < len(self):
+            print(p._element, end= ' --> ')
+            p = p._next
+            i = i + 1
+        print()
+
+
+CircularLinkedList = CircularLinkedList()
+CircularLinkedList.add_last(3)
+CircularLinkedList.add_last(5)
+CircularLinkedList.add_last(2)
+CircularLinkedList.display()
+i = CircularLinkedList.__len__()
+print('Size: ', i)
