@@ -57,11 +57,29 @@ class CircularLinkedList:
             i = i + 1
         print()
 
+# (4). Implement addfirst()
+# Implement insert an element at the start of a Circular Linked List
+    def add_first(self, e):
+        newest = _Node(e, None)
+        if self.is_empty():
+            newest._next = newest
+            self._head = newest
+        else:
+            self._tail._next = newest
+            newest._next = self._head
+        self._head = newest
+        self._size += 1
+
+
 
 CircularLinkedList = CircularLinkedList()
 CircularLinkedList.add_last(3)
 CircularLinkedList.add_last(5)
 CircularLinkedList.add_last(2)
+CircularLinkedList.display()
+i = CircularLinkedList.__len__()
+print('Size: ', i)
+CircularLinkedList.add_first(9)
 CircularLinkedList.display()
 i = CircularLinkedList.__len__()
 print('Size: ', i)
