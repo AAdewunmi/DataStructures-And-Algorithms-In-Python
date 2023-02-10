@@ -70,7 +70,18 @@ class CircularLinkedList:
         self._head = newest
         self._size += 1
 
-
+# (5). Implement addany()
+# Implement add element anywhere inbetween the Circular Linked List
+    def addany(self, e, position):
+        newest = _Node(e, None)
+        p = self._head
+        i = 1
+        while i < position - 1:
+            p = p._next
+            i = i + 1
+        newest._next = p._next
+        p._next = newest
+        self._size += 1
 
 CircularLinkedList = CircularLinkedList()
 CircularLinkedList.add_last(3)
