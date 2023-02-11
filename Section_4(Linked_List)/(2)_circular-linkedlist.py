@@ -98,6 +98,24 @@ class CircularLinkedList:
             self._tail = None
         return e
 
+# (7). Implement remove_last()
+# Implement delete at end of Circular Linked List
+    def remove_last(self):
+        if self.is_empty():
+            print('Circular List is Empty')
+            return
+        p = self._head
+        i = 1
+        while i < len(self) - 1:
+            p = p._next
+            i = i + 1
+        self._tail = p
+        p = p._next
+        self._tail._next = self._head
+        e = p._element
+        self._size -= 1
+        return e
+
 CircularLinkedList = CircularLinkedList()
 CircularLinkedList.add_last(3)
 CircularLinkedList.add_last(5)
@@ -115,6 +133,11 @@ i = CircularLinkedList.__len__()
 print('Size: ', i)
 j = CircularLinkedList.remove_first()
 print('Element Removed: ', j)
+CircularLinkedList.display()
+i = CircularLinkedList.__len__()
+print('Size: ', i)
+k = CircularLinkedList.remove_last()
+print('Element Removed: ', k)
 CircularLinkedList.display()
 i = CircularLinkedList.__len__()
 print('Size: ', i)
