@@ -72,7 +72,7 @@ class CircularLinkedList:
 
 # (5). Implement addany()
 # Implement add element anywhere inbetween the Circular Linked List
-    def addany(self, e, position):
+    def add_any(self, e, position):
         newest = _Node(e, None)
         p = self._head
         i = 1
@@ -83,6 +83,21 @@ class CircularLinkedList:
         p._next = newest
         self._size += 1
 
+# (6). Implement remove_first()
+# Implement delete an element at the beginning of a Circular Linked List
+    def remove_first(self):
+        if self.is_empty():
+            print('Circular List is Empty')
+            return
+        e = self._head._element
+        self._tail._next = self._head._next
+        self._head = self._head._next
+        self._size -= 1
+        if self.is_empty():
+            self._head = None
+            self._tail = None
+        return e
+
 CircularLinkedList = CircularLinkedList()
 CircularLinkedList.add_last(3)
 CircularLinkedList.add_last(5)
@@ -91,6 +106,15 @@ CircularLinkedList.display()
 i = CircularLinkedList.__len__()
 print('Size: ', i)
 CircularLinkedList.add_first(9)
+CircularLinkedList.display()
+i = CircularLinkedList.__len__()
+print('Size: ', i)
+CircularLinkedList.add_any(20, 3)
+CircularLinkedList.display()
+i = CircularLinkedList.__len__()
+print('Size: ', i)
+j = CircularLinkedList.remove_first()
+print('Element Removed: ', j)
 CircularLinkedList.display()
 i = CircularLinkedList.__len__()
 print('Size: ', i)
