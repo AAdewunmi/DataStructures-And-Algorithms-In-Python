@@ -116,6 +116,19 @@ class CircularLinkedList:
         self._size -= 1
         return e
 
+# (8). Implement remove_any()
+# Implement delete element anywhere in between Circular Linked List
+    def remove_any(self, position):
+        p = self._head
+        i = 1
+        while i < position -1:
+            p = p._next
+            i = i + 1
+        e = p._next._element
+        p._next = p._next._next
+        self._size -= 1
+        return e
+
 CircularLinkedList = CircularLinkedList()
 CircularLinkedList.add_last(3)
 CircularLinkedList.add_last(5)
@@ -138,6 +151,17 @@ i = CircularLinkedList.__len__()
 print('Size: ', i)
 k = CircularLinkedList.remove_last()
 print('Element Removed: ', k)
+CircularLinkedList.display()
+i = CircularLinkedList.__len__()
+print('Size: ', i)
+CircularLinkedList.add_last(33)
+CircularLinkedList.add_last(55)
+CircularLinkedList.add_last(22)
+CircularLinkedList.display()
+i = CircularLinkedList.__len__()
+print('Size: ', i)
+l = CircularLinkedList.remove_any(2)
+print('Element Removed: ', l)
 CircularLinkedList.display()
 i = CircularLinkedList.__len__()
 print('Size: ', i)
