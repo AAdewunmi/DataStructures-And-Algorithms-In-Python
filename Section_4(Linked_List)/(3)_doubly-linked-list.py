@@ -30,3 +30,16 @@ class DoublyLinkedList:
 
     def is_empty(self):
         return self._size == 0
+
+# (3.) Implement add_last()
+# Implement add element to end of Doubly Linked List
+    def add_last(self, element):
+        newest = _Node(element, None, None)
+        if self.is_empty():
+            self._head = newest
+            self._tail = newest
+        else:
+            self._tail._next = newest
+            newest._prev = self._tail
+            self._tail = newest
+        self._size += 1
