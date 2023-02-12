@@ -19,3 +19,14 @@ class _Node:
         self._prev = prev
 
 # (2.) Doubly Linked List Class
+class DoublyLinkedList:
+    def __init__(self):
+        self._head = None
+        self._tail = None
+        self._size = 0
+
+    def __len__(self):
+        return self._size == 0
+
+    def is_empty(self):
+        return self._size == 0
