@@ -43,3 +43,12 @@ class DoublyLinkedList:
             newest._prev = self._tail
             self._tail = newest
         self._size += 1
+
+# (4.) Implement display()
+# Implement display all the elements in a Double Linked List
+    def display(self):
+        p = self._head
+        while p:
+            print(p._element, end=' --> ')
+            p = p._next
+        print()
