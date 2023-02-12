@@ -45,10 +45,19 @@ class DoublyLinkedList:
         self._size += 1
 
 # (4.) Implement display()
-# Implement display all the elements in a Double Linked List
+# Implement display all the elements in a Doubly Linked List
     def display(self):
         p = self._head
         while p:
             print(p._element, end=' --> ')
             p = p._next
         print()
+
+# (5.) Implement display_rev()
+# Implement display all the elements in a Doubly Linked List in reverse order
+    def display_rev(self):
+        p = self._tail
+        while p:
+            print(p._element, end=' --> ')
+            p = p._prev
+        print
