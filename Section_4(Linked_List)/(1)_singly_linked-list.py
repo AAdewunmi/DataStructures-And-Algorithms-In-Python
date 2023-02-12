@@ -1,23 +1,25 @@
-# Linked List
+# Singly Linked List
 # ========================
 # Definition:
-# Linked list is a linear data structure that includes a series of connected nodes.
-# Linked list can be defined as the nodes that are randomly stored in the memory.
+# Singly Linked list is a linear data structure that includes a series of connected nodes.
+# Singly Linked list can be defined as the nodes that are randomly stored in the memory.
 # A node in the linked list contains two parts, i.e., first is the data part and second is the address part.
 # The last node of the list contains a pointer to the null. After array, linked list is the second most used data structure.
 # In a linked list, every link contains a connection to another link.
-
-
+#
+# Singly Linked List Illustration
+# HEAD -> [data][next] -> [data][next] -> [data][next] -> NULL
+#
 # (1). Why do we use Linked List?
 #
-# Linked list is a data structure that overcomes the limitation of arrays.
+# Singly Linked list is a data structure that overcomes the limitation of arrays.
 # These include:
 # - The size of the array must be known in advance.
 # - Increasing the size of the array is a time-consuming task.
 # - All the elements in the array need to be contiguously stored in the memory.
 #   Inserting an element in the array needs shifting of all its predecessors.
 #
-# Linked list is useful because:
+# Singly Linked list is useful because:
 # - It dynamically allocates memory. All the nodes of the linked list are non-contiguously
 #   stored in memory and linked together with the help of pointers.
 # - In a linked list, size is no longer a problem since we do not have to define its size at the time of declaration.

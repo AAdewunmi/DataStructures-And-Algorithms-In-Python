@@ -9,7 +9,11 @@
 # connects to the first node, so the link part of the last node holds the first
 # node's address. The circular linked list has no starting and ending node.
 # We can traverse in any direction, i.e., either backward or forward.
-
+#
+# Circular Linked List Illustration
+# HEAD -> [data][next] -> [data][next] -> [data][next] ->
+#   <-             <-             <-              <-
+#
 
 # (1). Creating and displaying a Circular Linked List
 # Node Class

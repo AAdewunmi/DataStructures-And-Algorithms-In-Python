@@ -1,3 +1,0 @@
-# Doubly Linked List
-# ========================
-# Definition
