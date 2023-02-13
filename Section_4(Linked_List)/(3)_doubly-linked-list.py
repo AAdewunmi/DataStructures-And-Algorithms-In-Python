@@ -26,7 +26,7 @@ class DoublyLinkedList:
         self._size = 0
 
     def __len__(self):
-        return self._size == 0
+        return self._size
 
     def is_empty(self):
         return self._size == 0
@@ -61,3 +61,35 @@ class DoublyLinkedList:
             print(p._element, end=' --> ')
             p = p._prev
         print
+
+
+# (6.) Implement add_first()
+# Implement insert element at the beginning of a Doubly Linked List
+    def add_first(self, element):
+        newest = _Node(element, None, None)
+        if self.is_empty():
+            self._head = newest
+            self._tail = newest
+        else:
+            newest._next = self._head
+            self._head._prev = newest
+            self._head = newest
+        self._size += 1
+
+DoublyLinkedList = DoublyLinkedList()
+DoublyLinkedList.add_last(2)
+DoublyLinkedList.add_last(8)
+DoublyLinkedList.add_last(5)
+i = DoublyLinkedList.__len__()
+print('Size:', i)
+DoublyLinkedList.display()
+DoublyLinkedList.display_rev()
+print()
+DoublyLinkedList.add_first(3)
+i = DoublyLinkedList.__len__()
+print('Size:', i)
+DoublyLinkedList.display()
+DoublyLinkedList.add_first(7)
+i = DoublyLinkedList.__len__()
+print('Size:', i)
+DoublyLinkedList.display()
