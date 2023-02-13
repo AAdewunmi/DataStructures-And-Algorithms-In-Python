@@ -91,6 +91,19 @@ class DoublyLinkedList:
         newest._prev = p
         self._size += 1
 
+# (8.) remove_first()
+# Implement delete an element at the beginning of a Doubly Linked List
+    def remove_first(self):
+        if self.is_empty():
+            print('List is Empty')
+            return
+        e = self._head._element
+        self._head = self._head._next
+        self._head._prev = None
+        self._size -= 1
+        if self.is_empty():
+            self._tail = None
+        return e
 
 DoublyLinkedList = DoublyLinkedList()
 DoublyLinkedList.add_last(2)
@@ -110,6 +123,11 @@ i = DoublyLinkedList.__len__()
 print('Size:', i)
 DoublyLinkedList.display()
 DoublyLinkedList.add_any(55, 3)
+i = DoublyLinkedList.__len__()
+print('Size:', i)
+DoublyLinkedList.display()
+j = DoublyLinkedList.remove_first()
+print('Element: ', j)
 i = DoublyLinkedList.__len__()
 print('Size:', i)
 DoublyLinkedList.display()
