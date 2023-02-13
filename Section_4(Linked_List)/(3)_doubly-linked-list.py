@@ -76,6 +76,22 @@ class DoublyLinkedList:
             self._head = newest
         self._size += 1
 
+# (7.) Implement add_any()
+# Implement insert an element anywhere in a Doubly Linked List
+    def add_any(self, element, position):
+        newest = _Node(element, None, None)
+        p = self._head
+        i = 1
+        while i < position - 1:
+            p = p._next
+            i = i + 1
+        newest._next = p._next
+        p._next._prev = newest
+        p._next = newest
+        newest._prev = p
+        self._size += 1
+
+
 DoublyLinkedList = DoublyLinkedList()
 DoublyLinkedList.add_last(2)
 DoublyLinkedList.add_last(8)
@@ -90,6 +106,10 @@ i = DoublyLinkedList.__len__()
 print('Size:', i)
 DoublyLinkedList.display()
 DoublyLinkedList.add_first(7)
+i = DoublyLinkedList.__len__()
+print('Size:', i)
+DoublyLinkedList.display()
+DoublyLinkedList.add_any(55, 3)
 i = DoublyLinkedList.__len__()
 print('Size:', i)
 DoublyLinkedList.display()
