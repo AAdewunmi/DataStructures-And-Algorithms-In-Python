@@ -117,6 +117,21 @@ class DoublyLinkedList:
         self._size -= 1
         return e
 
+# (10.) Implement remove_any()
+# Implement delete element anywhere in a Doubly Linked List
+    def remove_any(self, position):
+        p = self._head
+        i = 1
+        while i < position - 1:
+            p = p._next
+            i = i + 1
+        e = p._next._element
+        p._next = p._next._next
+        p._next._prev = p
+        self._size -= 1
+        return e
+
+
 DoublyLinkedList = DoublyLinkedList()
 DoublyLinkedList.add_last(2)
 DoublyLinkedList.add_last(8)
@@ -145,6 +160,11 @@ print('Size:', i)
 DoublyLinkedList.display()
 k = DoublyLinkedList.remove_last()
 print('Element: ', k)
+i = DoublyLinkedList.__len__()
+print('Size:', i)
+DoublyLinkedList.display()
+l = DoublyLinkedList.remove_any(3)
+print('Element: ', l)
 i = DoublyLinkedList.__len__()
 print('Size:', i)
 DoublyLinkedList.display()
