@@ -105,6 +105,18 @@ class DoublyLinkedList:
             self._tail = None
         return e
 
+# (9.) Implement remove_last()
+# Implement delete an element at the end of a Doubly Linked List
+    def remove_last(self):
+        if self.is_empty():
+            print('List is empty')
+            return
+        e = self._tail._element
+        self._tail = self._tail._prev
+        self._tail._next = None
+        self._size -= 1
+        return e
+
 DoublyLinkedList = DoublyLinkedList()
 DoublyLinkedList.add_last(2)
 DoublyLinkedList.add_last(8)
@@ -128,6 +140,11 @@ print('Size:', i)
 DoublyLinkedList.display()
 j = DoublyLinkedList.remove_first()
 print('Element: ', j)
+i = DoublyLinkedList.__len__()
+print('Size:', i)
+DoublyLinkedList.display()
+k = DoublyLinkedList.remove_last()
+print('Element: ', k)
 i = DoublyLinkedList.__len__()
 print('Size:', i)
 DoublyLinkedList.display()
