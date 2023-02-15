@@ -28,3 +28,9 @@ class ArrayStack:
 
     def push(self, element):
         self._data.append(element)
+
+    def pop(self):
+        if self.is_empty():
+            print('Stack is Empty')
+            return
+        return self._data.pop()
