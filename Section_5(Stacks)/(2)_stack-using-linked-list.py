@@ -14,9 +14,22 @@
 # In Python, a stack can be implemented using either an Array or a Linked List.
 # This tutorial will consider a Linked List implementation of a stack
 
+# Node Class
 class _Node:
     __slots__ = 'element', 'next'
 
     def __init__(self, element, next):
         self._element = element
         self._next = next
+
+# Class LinkedListStack
+class LinkedListStack:
+    def __init__(self):
+        self._top = None
+        self.size = 0
+
+    def __len__(self):
+        return self._size
+
+    def is_empty(self):
+        return self._size == 0
