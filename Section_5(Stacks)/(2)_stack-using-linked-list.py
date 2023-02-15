@@ -42,3 +42,18 @@ class LinkedListStack:
             newest._next = self._top
             self._top = newest
         self._size += 1
+
+    def pop(self):
+        if self.is_empty():
+            print('Stack is Empty')
+            return
+        e = self._top._element
+        self._top = self._top._next
+        self._size -= 1
+        return e
+
+    def top(self):
+        if self.is_empty():
+            print('Stack is Empty')
+            return
+        return self._top._element
