@@ -25,3 +25,6 @@ class ArrayStack:
 
     def is_empty(self):
         return len(self._data) == 0
+
+    def push(self, element):
+        self._data.append(element)
