@@ -34,3 +34,20 @@ class ArrayStack:
             print('Stack is Empty')
             return
         return self._data.pop()
+
+    def top(self):
+        if self.is_empty():
+            print('Stack is Empty')
+            return
+        return self._data[ - 1]
+
+array_stack = ArrayStack()
+array_stack.push(5)
+array_stack.push(7)
+array_stack.push(9)
+print('Push Element:', array_stack._data)
+print('Stack Length:', len(array_stack))
+print('Pop Element:', array_stack.pop())
+print('Push Element:',array_stack._data)
+print('Stack Length:', len(array_stack))
+print('Top Element:', array_stack.top())
