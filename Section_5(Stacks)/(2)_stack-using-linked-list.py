@@ -33,3 +33,12 @@ class LinkedListStack:
 
     def is_empty(self):
         return self._size == 0
+
+    def push(self, element):
+        newest = _Node(element, None)
+        if self.is_empty():
+            self._top = newest
+        else:
+            newest._next = self._top
+            self._top = newest
+        self._size += 1
