@@ -16,7 +16,7 @@
 
 # Node Class
 class _Node:
-    __slots__ = 'element', 'next'
+    __slots__ = '_element', '_next'
 
     def __init__(self, element, next):
         self._element = element
@@ -26,7 +26,7 @@ class _Node:
 class LinkedListStack:
     def __init__(self):
         self._top = None
-        self.size = 0
+        self._size = 0
 
     def __len__(self):
         return self._size
@@ -57,3 +57,23 @@ class LinkedListStack:
             print('Stack is Empty')
             return
         return self._top._element
+
+    def display(self):
+        p = self._top
+        while p:
+            print(p._element, end=' --> ')
+            p = p._next
+        print()
+
+linkedlist_stack = LinkedListStack()
+linkedlist_stack.push(5)
+linkedlist_stack.push(7)
+linkedlist_stack.push(9)
+print('Push Element:')
+linkedlist_stack.display()
+print('Stack Length:', len(linkedlist_stack))
+print('Pop Element:', linkedlist_stack.pop())
+print('Push Element:')
+linkedlist_stack.display()
+print('Stack Length:', len(linkedlist_stack))
+print('Top Element:', linkedlist_stack.top())
