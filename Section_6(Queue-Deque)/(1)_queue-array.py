@@ -4,8 +4,7 @@
 #
 # Representation of the queue:
 #
-# Dequeue            <- [1st Value][2nd Value][3rd Value][4th Value] <- Enqueue
-# Front end (Delete) ->                                              <- Front end (Delete)
+# Dequeue            <-             [Data][Data][Data][Data]         <- Enqueue
 #
 # Types of Queue
 #
@@ -43,3 +42,20 @@ class ArrayQueue:
             print('Queue is Empty')
             return
         return self._data[0]
+
+ArrayQueue = ArrayQueue()
+ArrayQueue.enqueue(5)
+ArrayQueue.enqueue(8)
+ArrayQueue.enqueue(1)
+print(ArrayQueue._data)
+print('Length: ', len(ArrayQueue))
+ArrayQueue.enqueue(7)
+ArrayQueue.enqueue(12)
+print(ArrayQueue._data)
+print('Length: ', len(ArrayQueue))
+i = ArrayQueue.dequeue()
+print('Element removed: ', i)
+print(ArrayQueue._data)
+print('Length: ', len(ArrayQueue))
+j = ArrayQueue.peek()
+print('Element at top: ', j)
