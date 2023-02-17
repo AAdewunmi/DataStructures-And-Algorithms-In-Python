@@ -24,3 +24,17 @@ class _Node:
     def __init__(self, element, next):
         self._element = element
         self._next = next
+
+# LinkedListQueue Class
+
+class LinkedListQueue:
+    def __init__(self):
+        self._front = None
+        self._rear = None
+        self._size = 0
+
+    def __len__(self):
+        return self._size
+
+    def is_empty(self):
+        return self._size == 0
