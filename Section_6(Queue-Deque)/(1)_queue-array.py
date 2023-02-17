@@ -37,3 +37,9 @@ class ArrayQueue:
             print('Queue is Empty')
             return
         return self._data.pop(0)
+
+    def peek(self):
+        if self.is_empty():
+            print('Queue is Empty')
+            return
+        return self._data[0]
