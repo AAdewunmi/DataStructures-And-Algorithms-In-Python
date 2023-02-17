@@ -32,3 +32,8 @@ class ArrayQueue:
     def enqueue(self, element):
         self._data.append(element)
 
+    def dequeue(self):
+        if self.is_empty():
+            print('Queue is Empty')
+            return
+        return self._data.pop(0)
