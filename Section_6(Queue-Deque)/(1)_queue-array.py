@@ -29,3 +29,6 @@ class ArrayQueue:
     def is_empty(self):
         return len(self._data) == 0
 
+    def enqueue(self, element):
+        self._data.append(element)
+
