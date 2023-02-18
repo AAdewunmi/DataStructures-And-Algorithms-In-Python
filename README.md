@@ -15,13 +15,13 @@ adapted from a course on Udemy.
 
 - [Section 2: Searching Algorithms](Section_2(Search-Algorithms)/)
 
-- Section 3: Sorting Algorithms
+- [Section 3: Sorting Algorithms](Section_3(Sorting-Algorithms))
 
-- Section 4: Linked List
+- [Section 4: Linked List](Section_4(Linked_List))
 
-- Section 5: Stacks
+- [Section 5: Stacks](Section_5(Stacks))
 
-- Section 6: Queues and Deque
+- [Section 6: Queues and Deque](Section_6(Queue-Deque))
 
 - Section 7: Binary Trees
 
