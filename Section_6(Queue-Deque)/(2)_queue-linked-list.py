@@ -38,3 +38,12 @@ class LinkedListQueue:
 
     def is_empty(self):
         return self._size == 0
+
+    def enqueue(self, element):
+        newest = _Node(element, None)
+        if self.is_empty():
+            self._front = newest
+        else:
+            self._rear._next = newest
+        self._rear = newest
+        self._size += 1
