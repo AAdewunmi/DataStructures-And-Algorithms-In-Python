@@ -64,3 +64,27 @@ class LinkedListQueue:
             print('Queue is Empty')
             return
         return self._front._element
+
+    def display(self):
+        p = self._front
+        while p:
+            print(p._element, end=' <-- ')
+            p = p._next
+        print()
+
+LinkedListQueue = LinkedListQueue()
+LinkedListQueue.enqueue(5)
+LinkedListQueue.enqueue(3)
+LinkedListQueue.enqueue(8)
+LinkedListQueue.display()
+print('Length: ', len(LinkedListQueue))
+LinkedListQueue.enqueue(7)
+LinkedListQueue.enqueue(12)
+LinkedListQueue.display()
+print('Length: ', len(LinkedListQueue))
+i = LinkedListQueue.dequeue()
+print('Element removed: ', i)
+LinkedListQueue.display()
+print('Length: ', len(LinkedListQueue))
+j = LinkedListQueue.peek()
+print('Element at top: ', j)
