@@ -47,3 +47,14 @@ class LinkedListQueue:
             self._rear._next = newest
         self._rear = newest
         self._size += 1
+
+    def dequeue(self):
+        if self.is_empty():
+            print('Queue is Empty')
+            return
+        e = self._front._element
+        self._front = self._front._next
+        self._size -= 1
+        if self.is_empty():
+            self._rear = None
+        return e
