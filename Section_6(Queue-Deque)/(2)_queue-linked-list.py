@@ -58,3 +58,9 @@ class LinkedListQueue:
         if self.is_empty():
             self._rear = None
         return e
+
+    def peek(self):
+        if self.is_empty():
+            print('Queue is Empty')
+            return
+        return self._front._element
