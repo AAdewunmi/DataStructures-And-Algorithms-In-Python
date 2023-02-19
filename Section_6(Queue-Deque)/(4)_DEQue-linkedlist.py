@@ -48,42 +48,50 @@ class LinkedListDEQue:
         return self._size == 0
 
         # Add Nodes to the back of the DEQue
-        def add_last(self, e):
-            newest = _Node(e, None)
-            if self.is_empty():
-                self._front = newest
-            else:
-                self._rear._next = newest
+    def add_last(self, e):
+        newest = _Node(e, None)
+        if self.is_empty():
+            self._front = newest
+        else:
+            self._rear._next = newest
+        self._rear = newest
+        self._size += 1
+
+    # Add Nodes to the front of the DEQue
+    def add_first(self, key):
+        newest = _Node(key, None)
+        if self.is_empty():
+            self._front = newest
             self._rear = newest
-            self._size += 1
+        else:
+            newest._next = self._front
+            self._front = newest
+        self._size += 1
 
-            # Add Nodes to the front of the DEQue
-            def add_first(self, key):
-                newest = _Node(key, None)
-                if self.is_empty():
-                    self._front = newest
-                    self._rear = newest
-                else:
-                    newest._next = self._front
-                    self._front = newest
-                self._size += 1
+    # Remove an element from the beginning of a DEQue
+    def remove_first(self):
+        if self.is_empty():
+            print('List is empty')
+            return
+        e = self._front._element
+        self._front = self._front._next
+        self._size -= 1
+        if self.is_empty():
+            self._rear = None
+        return e
 
-                # Remove an element from the beginning of a DEQue
-                def remove_first(self):
-                    if self.is_empty():
-                        print('List is empty')
-                        return
-                    e = self._front._element
-                    self._front = self._front._next
-                    self._size -= 1
-                    if self.is_empty():
-                        self._rear = None
-                    return e
+    # Traverse the DEQue and display elements
+    def display(self):
+        p = self._front
+        while p:
+            print(p._element, end=' --> ')
+            p = p._next
+        print()
 
-                # Traverse the DEQue and display elements
-                def display(self):
-                    p = self._front
-                    while p:
-                        print(p._element, end=' --> ')
-                        p = p._next
-                    print()
+    # Gets the element at the front of the DEQue without removing it.
+    def peek(self):
+        if self.is_empty():
+            print('DEQue is Empty')
+            return
+        return self._front._element
+
