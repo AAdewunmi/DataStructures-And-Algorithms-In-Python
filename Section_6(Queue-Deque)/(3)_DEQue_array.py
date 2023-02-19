@@ -39,3 +39,9 @@ class ArrayDEQue:
             print('DEQue is Empty')
             return
         return self._data.pop(0)
+
+    def remove_rear(self):
+        if self.is_empty():
+            print('DEQue is Empty')
+            return
+        return self._data.pop()
