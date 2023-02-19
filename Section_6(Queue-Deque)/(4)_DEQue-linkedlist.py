@@ -16,44 +16,6 @@
 # INSERT ->  [Data][Data][Data][Data][Data] <- INSERT
 # DELETE <-                                 -> DELETE
 
-
-# Implement ArrayDEQue Class
-class ArrayDEQue:
-    def __init__(self):
-        self._data = []
-
-    def __len__(self):
-        return len(self._data)
-
-    def is_empty(self):
-        return len(self._data) == 0
-
-    def add_front(self, element):
-        self._data.append(0, element)
-
-    def add_rear(self, element):
-        self._data.append(element)
-
-    def remove_front(self):
-        if self.is_empty():
-            print('DEQue is Empty')
-            return
-        return self._data.pop(0)
-
-    def remove_rear(self):
-        if self.is_empty():
-            print('DEQue is Empty')
-            return
-        return self._data.pop()
-
-    def peek(self):
-        if self.is_empty():
-            print('DEQue is Empty')
-            return
-        return self._data[0]
-
-    def rear(self):
-        if self.is_empty():
-            print('DEQue is Empty')
-            return
-        return self._data[-1]
+# Implementation of DEQue using Linked List Data Structure
+#
+# LinkedListDEQue Class
