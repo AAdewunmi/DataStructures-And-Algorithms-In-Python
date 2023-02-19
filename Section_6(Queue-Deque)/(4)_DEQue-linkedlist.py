@@ -95,3 +95,37 @@ class LinkedListDEQue:
             return
         return self._front._element
 
+    # Gets the element at the back of the DEQue without removing it.
+    def rear(self):
+        if self.is_empty():
+            print('DEQue is Empty')
+            return
+        return self._rear._element
+
+LinkedListDEQue = LinkedListDEQue()
+LinkedListDEQue.add_first(5)
+LinkedListDEQue.add_first(3)
+LinkedListDEQue.add_first(7)
+LinkedListDEQue.display()
+print('Length: ', len(LinkedListDEQue))
+LinkedListDEQue.add_last(2)
+LinkedListDEQue.add_last(8)
+LinkedListDEQue.add_last(6)
+LinkedListDEQue.display()
+print('Length: ', len(LinkedListDEQue))
+i = LinkedListDEQue.remove_first()
+print('Remove first element: ', i)
+LinkedListDEQue.display()
+print('Length: ', len(LinkedListDEQue))
+j = LinkedListDEQue.remove_last()
+print('Remove last element: ', j)
+LinkedListDEQue.display()
+print('Length: ', len(LinkedListDEQue))
+k = LinkedListDEQue.peek()
+print('Front element: ', k)
+LinkedListDEQue.display()
+print('Length: ', len(LinkedListDEQue))
+l = LinkedListDEQue.rear()
+print('Back Element: ', l)
+LinkedListDEQue.display()
+print('Length: ', len(LinkedListDEQue))
