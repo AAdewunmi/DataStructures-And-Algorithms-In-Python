@@ -56,3 +56,14 @@ class LinkedListDEQue:
                 self._rear._next = newest
             self._rear = newest
             self._size += 1
+
+            # Add Nodes to the front of the DEQue
+            def add_first(self, key):
+                newest = _Node(key, None)
+                if self.is_empty():
+                    self._front = newest
+                    self._rear = newest
+                else:
+                    newest._next = self._front
+                    self._front = newest
+                self._size += 1
