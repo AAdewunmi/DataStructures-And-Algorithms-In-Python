@@ -33,3 +33,9 @@ class ArrayDEQue:
 
     def add_rear(self, element):
         self._data.append(element)
+
+    def remove_front(self):
+        if self.is_empty():
+            print('DEQue is Empty')
+            return
+        return self._data.pop(0)
