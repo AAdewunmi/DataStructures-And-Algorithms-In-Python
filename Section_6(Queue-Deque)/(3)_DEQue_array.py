@@ -51,3 +51,9 @@ class ArrayDEQue:
             print('DEQue is Empty')
             return
         return self._data[0]
+
+    def rear(self):
+        if self.is_empty():
+            print('DEQue is Empty')
+            return
+        return self._data[-1]
