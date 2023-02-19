@@ -32,3 +32,17 @@ class _Node(object):
 
 # LinkedListDEQue Class
 # ===========
+class LinkedListDEQue:
+    # Constructor
+    def __init__(self):
+        self._front = None
+        self._rear = None
+        self._size = 0
+
+    # Find length of the DEQue
+    def __len__(self):
+        return self._size
+
+    # Check whether DEQue is empty
+    def is_empty(self):
+        return self._size == 0
