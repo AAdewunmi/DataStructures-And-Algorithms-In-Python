@@ -67,3 +67,15 @@ class LinkedListDEQue:
                     newest._next = self._front
                     self._front = newest
                 self._size += 1
+
+                # Remove an element from the beginning of a DEQue
+                def remove_first(self):
+                    if self.is_empty():
+                        print('List is empty')
+                        return
+                    e = self._front._element
+                    self._front = self._front._next
+                    self._size -= 1
+                    if self.is_empty():
+                        self._rear = None
+                    return e
