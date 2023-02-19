@@ -24,3 +24,9 @@ class ArrayDEQue:
 
     def __len__(self):
         return len(self._data)
+
+    def is_empty(self):
+        return len(self._data) == 0
+
+    def add_front(self, element):
+        self._data.append(0, element)
