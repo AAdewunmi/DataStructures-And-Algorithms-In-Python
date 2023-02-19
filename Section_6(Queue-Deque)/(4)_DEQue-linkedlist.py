@@ -80,6 +80,24 @@ class LinkedListDEQue:
             self._rear = None
         return e
 
+    # Remove an element from the end of a DEQue
+    def remove_last(self):
+        if self.is_empty():
+            print('List is empty')
+            return
+        p = self._front
+        i = 1
+        while i < len(self) - 1:
+            p = p._next
+            i = i + 1
+        self._rear = p
+        p = p._next
+        e = p._element
+        self._rear._next = None
+        self._size -= 1
+        return e
+
+
     # Traverse the DEQue and display elements
     def display(self):
         p = self._front
