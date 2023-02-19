@@ -46,3 +46,13 @@ class LinkedListDEQue:
     # Check whether DEQue is empty
     def is_empty(self):
         return self._size == 0
+
+        # Add Nodes to the back of the DEQue
+        def add_last(self, e):
+            newest = _Node(e, None)
+            if self.is_empty():
+                self._front = newest
+            else:
+                self._rear._next = newest
+            self._rear = newest
+            self._size += 1
