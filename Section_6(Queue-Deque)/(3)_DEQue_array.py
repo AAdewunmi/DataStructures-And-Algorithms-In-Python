@@ -30,3 +30,6 @@ class ArrayDEQue:
 
     def add_front(self, element):
         self._data.append(0, element)
+
+    def add_rear(self, element):
+        self._data.append(element)
