@@ -79,3 +79,11 @@ class LinkedListDEQue:
                     if self.is_empty():
                         self._rear = None
                     return e
+
+                # Traverse the DEQue and display elements
+                def display(self):
+                    p = self._front
+                    while p:
+                        print(p._element, end=' --> ')
+                        p = p._next
+                    print()
