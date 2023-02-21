@@ -28,6 +28,12 @@ class BinaryTree:
     def __init__(self, element, left, right):
         self._root = _Node(element, left._root, right._root)
 
+    def preorder(self, root):
+        if root:
+            print(root._element, end=' ')
+            self.preorder(root.left)
+            self.preorder(root.right)
+
     def inorder(self, root):
         if root:
             self.inorder(root.left)
