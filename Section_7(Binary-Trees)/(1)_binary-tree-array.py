@@ -27,3 +27,10 @@ class _Node:
 class BinaryTree:
     def __init__(self, element, left, right):
         self._root = _Node(element, left._root, right._root)
+
+    def inorder(self, root):
+        if root:
+            self.inorder(root.left)
+            print(root._element, end=' ')
+            self.inorder(root.right)
+
