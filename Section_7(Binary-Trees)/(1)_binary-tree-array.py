@@ -40,3 +40,9 @@ class BinaryTree:
             print(root._element, end=' ')
             self.inorder(root.right)
 
+    def postorder(self, root):
+        if root:
+            self.postorder(root.left)
+            self.postorder(root.right)
+            print(root._element, end=' ')
+
