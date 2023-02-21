@@ -22,3 +22,8 @@ class _Node:
         self._element = element
         self._left = left
         self._right = right
+
+# Implement BinaryTree Class
+class BinaryTree:
+    def __init__(self, element, left, right):
+        self._root = _Node(element, left._root, right._root)
