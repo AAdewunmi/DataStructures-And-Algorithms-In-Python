@@ -23,7 +23,7 @@ adapted from a course on Udemy.
 
 - [Section 6: Queues and Deque](Section_6(Queue-Deque))
 
-- Section 7: Binary Trees
+- [Section 7: Binary Tree](Section_7(Binary-Trees))
 
 - Section 8: Binary Search Tree
 
