@@ -25,7 +25,10 @@ class _Node:
 
 # Implement BinaryTree Class
 class BinaryTree:
-    def __init__(self, element, left, right):
+    def __init__(self):
+        self._root = None
+
+    def maketree(self, element, left, right):
         self._root = _Node(element, left._root, right._root)
 
     def preorder(self, root):
