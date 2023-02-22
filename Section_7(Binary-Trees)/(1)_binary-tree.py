@@ -33,19 +33,56 @@ class BinaryTree:
 
     def preorder(self, root):
         if root:
-            print(root._element, end=' ')
-            self.preorder(root.left)
-            self.preorder(root.right)
+            print(root._element, end='-->')
+            self.preorder(root._left)
+            self.preorder(root._right)
 
     def inorder(self, root):
         if root:
-            self.inorder(root.left)
-            print(root._element, end=' ')
-            self.inorder(root.right)
+            self.inorder(root._left)
+            print(root._element, end='-->')
+            self.inorder(root._right)
 
     def postorder(self, root):
         if root:
-            self.postorder(root.left)
-            self.postorder(root.right)
-            print(root._element, end=' ')
+            self.postorder(root._left)
+            self.postorder(root._right)
+            print(root._element, end='-->')
 
+# Example 1
+print('Example 1')
+x = BinaryTree()
+y = BinaryTree()
+z = BinaryTree()
+a = BinaryTree()
+x.maketree(20, a, a)
+y.maketree(30, a, a)
+z.maketree(10, x, y)
+print('Preorder Traversal')
+z.preorder(z._root)
+print('\nInorder Traversal')
+z.inorder(z._root)
+print('\nPostorder Traversal')
+z.postorder(z._root)
+
+# Example 2
+print('\nExample 2')
+x = BinaryTree()
+y = BinaryTree()
+z = BinaryTree()
+a = BinaryTree()
+b = BinaryTree()
+c = BinaryTree()
+e = BinaryTree()
+x.maketree(40, e, e)
+y.maketree(20, x, e)
+z.maketree(60, e, e)
+a.maketree(50, e, z)
+b.maketree(30, a, e)
+c.maketree(10, y, b)
+print('Preorder Traversal')
+c.preorder(c._root)
+print('\nInorder Traversal')
+c.inorder(c._root)
+print('\nPostorder Traversal')
+c.postorder(c._root)
