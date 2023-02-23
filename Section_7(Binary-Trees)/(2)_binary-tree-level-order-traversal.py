@@ -39,16 +39,22 @@ class BinaryTree:
     def levelorder(self):
        Q = LinkedListQueue()
        t = self._root
-       print(t._element, end=' ')
+       print(t._element, end='-->')
        Q.enqueue(t)
        while not Q.is_empty():
            t = Q.dequeue()
            if t._left:
-               print(t._left._element, end=' ')
+               print(t._left._element, end='-->')
                Q.enqueue(t._left)
            if t._right:
-               print(t._right._element, end=' ')
+               print(t._right._element, end='-->')
                Q.enqueue(t._right)
+    def count(self, root):
+       if root:
+           x = self.count(root._left)
+           y = self.count(root._right)
+           return x + y + 1
+       return 0
 
 x = BinaryTree()
 y = BinaryTree()
@@ -71,3 +77,5 @@ print('\nPostorder Traversal')
 c.postorder(c._root)
 print('\nLevel order Traversal')
 c.levelorder()
+print('\nNumber of Nodes')
+print(c.count(c._root))
