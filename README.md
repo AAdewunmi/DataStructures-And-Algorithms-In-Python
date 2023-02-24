@@ -25,7 +25,7 @@ adapted from a course on Udemy.
 
 - [Section 7: Binary Tree](Section_7(Binary-Trees))
 
-- Section 8: Binary Search Tree
+- [Section 8: Binary Search Tree](Section_8(Binary-Search-Tree))
 
 - Section 9: Balanced Search Tree
 
