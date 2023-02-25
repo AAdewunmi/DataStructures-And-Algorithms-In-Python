@@ -24,3 +24,8 @@ class _Node:
 # Implement Binary Search Tree using Linked representation. It is similar in structure to
 # a Linked list but not a Linked List.
 
+class BinarySearchTree:
+
+    def __init__(self):
+        self._root = None
+
