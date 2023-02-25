@@ -67,7 +67,7 @@ class BinarySearchTree:
             root = n
         return root
 
-    # Recursive Search function
+    # Iterative Search function
     def search_it(self, key):
         root = self._root
         while root:
@@ -78,6 +78,16 @@ class BinarySearchTree:
             elif key > root._element:
                 root = root._right
         return False
+
+    # Recursive Search function
+    def search_recur(self, root, key):
+        if root:
+            if key == root._element:
+                return True
+            elif key < root._element:
+                return self.search_recur(root._left, key)
+            elif key > root._element:
+                return self.search_recur(root._right, key)
 
 BinarySearchTree = BinarySearchTree()
 BinarySearchTree.insert_it(BinarySearchTree._root, 50)
@@ -97,3 +107,4 @@ BinarySearchTree.insert_recur(BinarySearchTree._root, 60)
 BinarySearchTree.inorder(BinarySearchTree._root)
 print()
 print(BinarySearchTree.search_it(10))
+print(BinarySearchTree.search_recur(BinarySearchTree._root, 10))
