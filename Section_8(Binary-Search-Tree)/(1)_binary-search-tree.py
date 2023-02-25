@@ -29,3 +29,22 @@ class BinarySearchTree:
     def __init__(self):
         self._root = None
 
+
+def insert(self, root, element):
+    temp = None
+    while root:
+        temp = root
+        if element == root._element:
+            return
+        elif element < root._element:
+            root = root._left
+        elif element > root._element:
+            root = root._right
+    n = _Node(element)
+    if self._root:
+        if element < temp._element:
+            temp._left = n
+        else:
+            temp._right = n
+    else:
+        self._root = n
