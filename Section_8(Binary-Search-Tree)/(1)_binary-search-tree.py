@@ -35,7 +35,8 @@ class BinarySearchTree:
             print(root._element, end='-->')
             self.inorder(root._right)
 
-    def insert(self, root, element):
+    # Iterative Insert function
+    def insert_it(self, root, element):
         temp = None
         while root:
             temp = root
@@ -53,3 +54,32 @@ class BinarySearchTree:
                 temp._right = n
         else:
             self._root = n
+
+    # Recursive Insert function
+    def insert_recur(self, root, e):
+        if root:
+            if e < root._element:
+                root._left = self.insert_recur(root._left, e)
+            elif e > root._element:
+                root._right = self.insert_recur(root._right, e)
+        else:
+            n = _Node(e)
+            root = n
+        return root
+
+BinarySearchTree = BinarySearchTree()
+BinarySearchTree.insert_it(BinarySearchTree._root, 50)
+BinarySearchTree.insert_it(BinarySearchTree._root, 30)
+BinarySearchTree.insert_it(BinarySearchTree._root, 80)
+BinarySearchTree.insert_it(BinarySearchTree._root, 10)
+BinarySearchTree.insert_it(BinarySearchTree._root, 40)
+BinarySearchTree.insert_it(BinarySearchTree._root, 60)
+BinarySearchTree.inorder(BinarySearchTree._root)
+print()
+BinarySearchTree.insert_recur(BinarySearchTree._root, 50)
+BinarySearchTree.insert_recur(BinarySearchTree._root, 30)
+BinarySearchTree.insert_recur(BinarySearchTree._root, 80)
+BinarySearchTree.insert_recur(BinarySearchTree._root, 10)
+BinarySearchTree.insert_recur(BinarySearchTree._root, 40)
+BinarySearchTree.insert_recur(BinarySearchTree._root, 60)
+BinarySearchTree.inorder(BinarySearchTree._root)
