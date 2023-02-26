@@ -89,6 +89,39 @@ class BinarySearchTree:
             elif key > root._element:
                 return self.search_recur(root._right, key)
 
+    def delete(self, e):
+        p = self._root
+        pp = None
+        while p and p._element != e:
+            pp = p
+            if e < p._element:
+                p = p._left
+            else:
+                p = p._right
+        if not p:
+            return False
+        if p._left and p._right:
+            s = p._left
+            ps = p
+            while s._right:
+                ps = s
+                s = s._right
+            p._element = s._element
+            p = s
+            pp = ps
+        c = None
+        if p._left:
+            c = p._left
+        else:
+            c = p._right
+        if p == self._root:
+            self._root = None
+        else:
+            if p == pp._left:
+                pp._left = c
+            else:
+                pp._right = c
+
 BinarySearchTree = BinarySearchTree()
 BinarySearchTree.insert_it(BinarySearchTree._root, 50)
 BinarySearchTree.insert_it(BinarySearchTree._root, 30)
@@ -108,3 +141,5 @@ BinarySearchTree.inorder(BinarySearchTree._root)
 print()
 print(BinarySearchTree.search_it(10))
 print(BinarySearchTree.search_recur(BinarySearchTree._root, 10))
+BinarySearchTree.delete(60)
+BinarySearchTree.inorder(BinarySearchTree._root)
