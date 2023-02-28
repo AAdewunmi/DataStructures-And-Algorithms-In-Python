@@ -61,3 +61,29 @@ class AVLTree(object):
                 return self.leftRotate(root)
 
         return root
+
+    # Function to delete a node
+    def delete_node(self, root, key):
+
+        # Find the node to be deleted and remove it
+        if not root:
+            return root
+        elif key < root.key:
+            root.left = self.delete_node(root.left, key)
+        elif key > root.key:
+            root.right = self.delete_node(root.right, key)
+        else:
+            if root.left is None:
+                temp = root.right
+                root = None
+                return temp
+            elif root.right is None:
+                temp = root.left
+                root = None
+                return temp
+            temp = self.getMinValueNode(root.right)
+            root.key = temp.key
+            root.right = self.delete_node(root.right,
+                                          temp.key)
+        if root is None:
+            return root
