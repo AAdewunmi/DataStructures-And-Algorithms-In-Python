@@ -138,3 +138,21 @@ class AVLTree(object):
         if not root:
             return 0
         return root.height
+
+    # Get balance factor of the node
+    def getBalance(self, root):
+        if not root:
+            return 0
+        return self.getHeight(root.left) - self.getHeight(root.right)
+
+    def getMinValueNode(self, root):
+        if root is None or root.left is None:
+            return root
+        return self.getMinValueNode(root.left)
+
+    def preOrder(self, root):
+        if not root:
+            return
+        print("{0} ".format(root.key), end="")
+        self.preOrder(root.left)
+        self.preOrder(root.right)
