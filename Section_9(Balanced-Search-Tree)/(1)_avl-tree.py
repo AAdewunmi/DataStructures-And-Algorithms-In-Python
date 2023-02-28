@@ -87,3 +87,24 @@ class AVLTree(object):
                                           temp.key)
         if root is None:
             return root
+
+        # Update the balance factor of nodes
+        root.height = 1 + max(self.getHeight(root.left),
+                              self.getHeight(root.right))
+
+        balanceFactor = self.getBalance(root)
+
+        # Balance the tree
+        if balanceFactor > 1:
+            if self.getBalance(root.left) >= 0:
+                return self.rightRotate(root)
+            else:
+                root.left = self.leftRotate(root.left)
+                return self.rightRotate(root)
+        if balanceFactor < -1:
+            if self.getBalance(root.right) <= 0:
+                return self.leftRotate(root)
+            else:
+                root.right = self.rightRotate(root.right)
+                return self.leftRotate(root)
+        return root
