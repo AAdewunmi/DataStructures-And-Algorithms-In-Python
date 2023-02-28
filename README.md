@@ -27,7 +27,7 @@ adapted from a course on Udemy.
 
 - [Section 8: Binary Search Tree](Section_8(Binary-Search-Tree))
 
-- Section 9: Balanced Search Tree
+- [Section 9: Balanced Search Tree](Section_9(Balanced-Search-Tree))
 
 - Section 10: Priority Queues and Heaps
 
