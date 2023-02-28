@@ -108,3 +108,27 @@ class AVLTree(object):
                 root.right = self.rightRotate(root.right)
                 return self.leftRotate(root)
         return root
+
+    # Function to perform left rotation
+    def leftRotate(self, z):
+        y = z.right
+        T2 = y.left
+        y.left = z
+        z.right = T2
+        z.height = 1 + max(self.getHeight(z.left),
+                           self.getHeight(z.right))
+        y.height = 1 + max(self.getHeight(y.left),
+                           self.getHeight(y.right))
+        return y
+
+    # Function to perform right rotation
+    def rightRotate(self, z):
+        y = z.left
+        T3 = y.right
+        y.right = z
+        z.left = T3
+        z.height = 1 + max(self.getHeight(z.left),
+                           self.getHeight(z.right))
+        y.height = 1 + max(self.getHeight(y.left),
+                           self.getHeight(y.right))
+        return y
