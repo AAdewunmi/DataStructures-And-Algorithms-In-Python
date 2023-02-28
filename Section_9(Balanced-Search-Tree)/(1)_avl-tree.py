@@ -132,3 +132,9 @@ class AVLTree(object):
         y.height = 1 + max(self.getHeight(y.left),
                            self.getHeight(y.right))
         return y
+
+    # Get the height of the node
+    def getHeight(self, root):
+        if not root:
+            return 0
+        return root.height
