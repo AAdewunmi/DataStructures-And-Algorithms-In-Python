@@ -56,3 +56,9 @@ class RedBlackTree():
         self.TNULL.right = None
         self.root = self.TNULL
 
+    # Preorder
+    def pre_order_helper(self, node):
+        if node != self.TNULL:
+            sys.stdout.write(node.item + " ")
+            self.pre_order_helper(node.left)
+            self.pre_order_helper(node.right)
