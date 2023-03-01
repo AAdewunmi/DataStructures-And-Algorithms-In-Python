@@ -290,3 +290,79 @@ class RedBlackTree():
             x.parent.right = y
         y.left = x
         x.parent = y
+
+    def right_rotate(self, x):
+        y = x.left
+        x.left = y.right
+        if y.right != self.TNULL:
+            y.right.parent = x
+
+        y.parent = x.parent
+        if x.parent == None:
+            self.root = y
+        elif x == x.parent.right:
+            x.parent.right = y
+        else:
+            x.parent.left = y
+        y.right = x
+        x.parent = y
+
+    def insert(self, key):
+        node = Node(key)
+        node.parent = None
+        node.item = key
+        node.left = self.TNULL
+        node.right = self.TNULL
+        node.color = 1
+
+        y = None
+        x = self.root
+
+        while x != self.TNULL:
+            y = x
+            if node.item < x.item:
+                x = x.left
+            else:
+                x = x.right
+
+        node.parent = y
+        if y == None:
+            self.root = node
+        elif node.item < y.item:
+            y.left = node
+        else:
+            y.right = node
+
+        if node.parent == None:
+            node.color = 0
+            return
+
+        if node.parent.parent == None:
+            return
+
+        self.fix_insert(node)
+
+    def get_root(self):
+        return self.root
+
+    def delete_node(self, item):
+        self.delete_node_helper(self.root, item)
+
+    def print_tree(self):
+        self.__print_helper(self.root, "", True)
+
+if __name__ == "__main__":
+    bst = RedBlackTree()
+
+    bst.insert(55)
+    bst.insert(40)
+    bst.insert(65)
+    bst.insert(60)
+    bst.insert(75)
+    bst.insert(57)
+
+    bst.print_tree()
+
+    print("\nAfter deleting an element")
+    bst.delete_node(40)
+    bst.print_tree()
