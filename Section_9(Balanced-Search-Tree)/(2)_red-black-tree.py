@@ -76,3 +76,12 @@ class RedBlackTree():
             self.post_order_helper(node.left)
             self.post_order_helper(node.right)
             sys.stdout.write(node.item + " ")
+
+    # Search the tree
+    def search_tree_helper(self, node, key):
+        if node == self.TNULL or key == node.item:
+            return node
+
+        if key < node.item:
+            return self.search_tree_helper(node.left, key)
+        return self.search_tree_helper(node.right, key)
