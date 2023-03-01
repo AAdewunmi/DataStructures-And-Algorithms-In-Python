@@ -239,3 +239,54 @@ class RedBlackTree():
             print(str(node.item) + "(" + s_color + ")")
             self.__print_helper(node.left, indent, False)
             self.__print_helper(node.right, indent, True)
+
+    def preorder(self):
+        self.pre_order_helper(self.root)
+    def inorder(self):
+        self.in_order_helper(self.root)
+    def postorder(self):
+        self.post_order_helper(self.root)
+    def searchTree(self, k):
+        return self.search_tree_helper(self.root, k)
+    def minimum(self, node):
+        while node.left != self.TNULL:
+            node = node.left
+        return node
+    def maximum(self, node):
+        while node.right != self.TNULL:
+            node = node.right
+        return node
+    def successor(self, x):
+        if x.right != self.TNULL:
+            return self.minimum(x.right)
+
+        y = x.parent
+        while y != self.TNULL and x == y.right:
+            x = y
+            y = y.parent
+        return y
+    def predecessor(self,  x):
+        if (x.left != self.TNULL):
+            return self.maximum(x.left)
+
+        y = x.parent
+        while y != self.TNULL and x == y.left:
+            x = y
+            y = y.parent
+
+        return y
+    def left_rotate(self, x):
+        y = x.right
+        x.right = y.left
+        if y.left != self.TNULL:
+            y.left.parent = x
+
+        y.parent = x.parent
+        if x.parent == None:
+            self.root = y
+        elif x == x.parent.left:
+            x.parent.left = y
+        else:
+            x.parent.right = y
+        y.left = x
+        x.parent = y
