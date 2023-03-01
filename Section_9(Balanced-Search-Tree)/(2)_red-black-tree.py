@@ -223,3 +223,19 @@ class RedBlackTree():
             if k == self.root:
                 break
         self.root.color = 0
+
+    # Printing the tree
+    def __print_helper(self, node, indent, last):
+        if node != self.TNULL:
+            sys.stdout.write(indent)
+            if last:
+                sys.stdout.write("R----")
+                indent += "     "
+            else:
+                sys.stdout.write("L----")
+                indent += "|    "
+
+            s_color = "RED" if node.color == 1 else "BLACK"
+            print(str(node.item) + "(" + s_color + ")")
+            self.__print_helper(node.left, indent, False)
+            self.__print_helper(node.right, indent, True)
