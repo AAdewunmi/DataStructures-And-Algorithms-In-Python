@@ -69,3 +69,10 @@ class RedBlackTree():
             self.in_order_helper(node.left)
             sys.stdout.write(node.item + " ")
             self.in_order_helper(node.right)
+
+    # Postorder
+    def post_order_helper(self, node):
+        if node != self.TNULL:
+            self.post_order_helper(node.left)
+            self.post_order_helper(node.right)
+            sys.stdout.write(node.item + " ")
