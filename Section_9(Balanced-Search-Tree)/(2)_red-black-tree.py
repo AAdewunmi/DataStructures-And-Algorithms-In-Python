@@ -145,3 +145,45 @@ class RedBlackTree():
         else:
             u.parent.right = v
         v.parent = u.parent
+
+    # Node deletion
+    def delete_node_helper(self, node, key):
+        z = self.TNULL
+        while node != self.TNULL:
+            if node.item == key:
+                z = node
+
+            if node.item <= key:
+                node = node.right
+            else:
+                node = node.left
+
+        if z == self.TNULL:
+            print("Cannot find key in the tree")
+            return
+
+        y = z
+        y_original_color = y.color
+        if z.left == self.TNULL:
+            x = z.right
+            self.__rb_transplant(z, z.right)
+        elif (z.right == self.TNULL):
+            x = z.left
+            self.__rb_transplant(z, z.left)
+        else:
+            y = self.minimum(z.right)
+            y_original_color = y.color
+            x = y.right
+            if y.parent == z:
+                x.parent = y
+            else:
+                self.__rb_transplant(y, y.right)
+                y.right = z.right
+                y.right.parent = y
+
+            self.__rb_transplant(z, y)
+            y.left = z.left
+            y.left.parent = y
+            y.color = z.color
+        if y_original_color == 0:
+            self.delete_fix(x)
