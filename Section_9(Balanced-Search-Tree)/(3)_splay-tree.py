@@ -111,3 +111,20 @@ class SplayTree:
 
         self.root = self.__join(s.left, t)
         s = None
+
+    # rotate left at node x
+    def __left_rotate(self, x):
+        y = x.right
+        x.right = y.left
+        if y.left != None:
+            y.left.parent = x
+
+        y.parent = x.parent
+        if x.parent == None:
+            self.root = y
+        elif x == x.parent.left:
+            x.parent.left = y
+        else:
+            x.parent.right = y
+        y.left = x
+        x.parent = y
