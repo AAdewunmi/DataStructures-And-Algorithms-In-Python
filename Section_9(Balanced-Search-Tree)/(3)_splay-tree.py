@@ -210,3 +210,25 @@ class SplayTree:
             self.__post_order_helper(node.right)
             sys.std.out.write(node.data + " ")
 
+    # Pre-Order traversal
+    # Node->Left Subtree->Right Subtree
+    def preorder(self):
+        self.__pre_order_helper(self.root)
+
+    # In-Order traversal
+    # Left Subtree -> Node -> Right Subtree
+    def inorder(self):
+        self.__in_order_helper(self.root)
+
+    # Post-Order traversal
+    # Left Subtree -> Right Subtree -> Node
+    def postorder(self):
+        self.__post_order_helper(self.root)
+
+    # search the tree for the key k
+    # and return the corresponding node
+    def search_tree(self, k):
+        x = self.__search_tree_helper(self.root, k)
+        if x != None:
+            self.__splay(x)
+
