@@ -238,3 +238,9 @@ class SplayTree:
             node = node.left
         return node
 
+    # find the node with the maximum key
+    def maximum(self, node):
+        while node.right != None:
+            node = node.right
+        return node
+
