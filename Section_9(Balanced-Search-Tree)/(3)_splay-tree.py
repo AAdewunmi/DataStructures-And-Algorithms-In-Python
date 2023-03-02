@@ -51,3 +51,18 @@ class SplayTree:
     def __init__(self):
         self.root = None
 
+    def __print_helper(self, currPtr, indent, last):
+        # print the tree structure on the screen
+        if currPtr != None:
+            sys.stdout.write(indent)
+            if last:
+                sys.stdout.write("R----")
+                indent += "     "
+            else:
+                sys.stdout.write("L----")
+                indent += "|    "
+
+            print(currPtr.data)
+
+            self.__print_helper(currPtr.left, indent, False)
+            self.__print_helper(currPtr.right, indent, True)
