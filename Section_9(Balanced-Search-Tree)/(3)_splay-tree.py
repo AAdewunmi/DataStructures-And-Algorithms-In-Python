@@ -46,3 +46,8 @@ class Node:
         self.parent = None
         self.left = None
         self.right = None
+
+class SplayTree:
+    def __init__(self):
+        self.root = None
+
