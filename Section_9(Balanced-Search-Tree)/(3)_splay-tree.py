@@ -187,3 +187,9 @@ class SplayTree:
         x.right = t
         t.parent = x
         return x
+
+    def __pre_order_helper(self, node):
+        if node != None:
+            sys.stdout.write(node.data + " ")
+            self.__pre_order_helper(node.left)
+            self.__pre_order_helper(node.right)
