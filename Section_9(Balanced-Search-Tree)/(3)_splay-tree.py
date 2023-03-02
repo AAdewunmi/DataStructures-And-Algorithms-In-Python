@@ -104,3 +104,10 @@ class SplayTree:
         s = x
         s.right = None
         x = None
+
+        # join operation
+        if s.left != None:
+            s.left.parent = None
+
+        self.root = self.__join(s.left, t)
+        s = None
