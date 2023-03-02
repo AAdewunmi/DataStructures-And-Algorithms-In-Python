@@ -128,3 +128,21 @@ class SplayTree:
             x.parent.right = y
         y.left = x
         x.parent = y
+
+    # rotate right at node x
+    def __right_rotate(self, x):
+        y = x.left
+        x.left = y.right
+        if y.right != None:
+            y.right.parent = x
+
+        y.parent = x.parent;
+        if x.parent == None:
+            self.root = y
+        elif x == x.parent.right:
+            x.parent.right = y
+        else:
+            x.parent.left = y
+
+        y.right = x
+        x.parent = y
