@@ -260,3 +260,18 @@ class SplayTree:
             y = y.parent
         return y
 
+    # find the predecessor of a given node
+    def predecessor(self, x):
+        # if the left subtree is not null,
+        # the predecessor is the rightmost node in the
+        # left subtree
+        if x.left != None:
+            return self.maximum(x.left)
+
+        y = x.parent
+        while y != None and x == y.left:
+            x = y
+            y = y.parent
+        return y
+
+
