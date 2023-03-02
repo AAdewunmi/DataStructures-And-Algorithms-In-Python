@@ -274,4 +274,28 @@ class SplayTree:
             y = y.parent
         return y
 
+    # insert the key to the tree in its appropriate position
+    def insert(self, key):
+        node = Node(key)
+        y = None
+        x = self.root
+
+        while x != None:
+            y = x
+            if node.data < x.data:
+                x = x.left
+            else:
+                x = x.right
+
+        # y is parent of x
+        node.parent = y
+        if y == None:
+            self.root = node
+        elif node.data < y.data:
+            y.left = node
+        else:
+            y.right = node
+        # splay the node
+        self.__splay(node)
+
 
