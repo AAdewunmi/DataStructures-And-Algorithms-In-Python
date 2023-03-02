@@ -74,3 +74,21 @@ class SplayTree:
         if key < node.data:
             return self.__search_tree_helper(node.left, key)
         return self.__search_tree_helper(node.right, key)
+
+    def __delete_node_helper(self, node, key):
+        x = None
+        t = None
+        s = None
+        while node != None:
+            if node.data == key:
+                x = node
+
+            if node.data <= key:
+                node = node.right
+            else:
+                node = node.left
+
+        if x == None:
+            print
+            "Couldn't find key in the tree"
+            return
