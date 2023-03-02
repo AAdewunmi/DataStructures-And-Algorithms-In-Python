@@ -298,4 +298,8 @@ class SplayTree:
         # splay the node
         self.__splay(node)
 
+    # delete the node from the tree
+    def delete_node(self, data):
+        self.__delete_node_helper(self.root, data)
+
 
