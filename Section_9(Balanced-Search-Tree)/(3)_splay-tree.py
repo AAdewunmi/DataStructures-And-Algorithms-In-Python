@@ -244,3 +244,19 @@ class SplayTree:
             node = node.right
         return node
 
+    # find the successor of a given node
+    def successor(self, x):
+        # if the right subtree is not null,
+        # the successor is the leftmost node in the
+        # right subtree
+        if x.right != None:
+            return self.minimum(x.right)
+
+        # else it is the lowest ancestor of x whose
+        # left child is also an ancestor of x.
+        y = x.parent
+        while y != None and x == y.right:
+            x = y
+            y = y.parent
+        return y
+
