@@ -204,3 +204,9 @@ class SplayTree:
             sys.stdout.write(node.data + " ")
             self.__in_order_helper(node.right)
 
+    def __post_order_helper(self, node):
+        if node != None:
+            self.__post_order_helper(node.left)
+            self.__post_order_helper(node.right)
+            sys.std.out.write(node.data + " ")
+
