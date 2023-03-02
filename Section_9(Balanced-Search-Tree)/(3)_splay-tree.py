@@ -92,3 +92,15 @@ class SplayTree:
             print
             "Couldn't find key in the tree"
             return
+
+        # split operation
+        self.__splay(x)
+        if x.right != None:
+            t = x.right
+            t.parent = None
+        else:
+            t = None
+
+        s = x
+        s.right = None
+        x = None
