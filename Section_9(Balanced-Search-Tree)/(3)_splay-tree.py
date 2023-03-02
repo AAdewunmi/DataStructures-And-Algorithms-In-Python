@@ -66,3 +66,11 @@ class SplayTree:
 
             self.__print_helper(currPtr.left, indent, False)
             self.__print_helper(currPtr.right, indent, True)
+
+    def __search_tree_helper(self, node, key):
+        if node == None or key == node.data:
+            return node
+
+        if key < node.data:
+            return self.__search_tree_helper(node.left, key)
+        return self.__search_tree_helper(node.right, key)
