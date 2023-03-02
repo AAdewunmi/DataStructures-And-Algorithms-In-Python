@@ -146,3 +146,30 @@ class SplayTree:
 
         y.right = x
         x.parent = y
+
+    # Splaying operation. It moves x to the root of the tree
+    def __splay(self, x):
+        while x.parent != None:
+            if x.parent.parent == None:
+                if x == x.parent.left:
+                    # zig rotation
+                    self.__right_rotate(x.parent)
+                else:
+                    # zag rotation
+                    self.__left_rotate(x.parent)
+            elif x == x.parent.left and x.parent == x.parent.parent.left:
+                # zig-zig rotation
+                self.__right_rotate(x.parent.parent)
+                self.__right_rotate(x.parent)
+            elif x == x.parent.right and x.parent == x.parent.parent.right:
+                # zag-zag rotation
+                self.__left_rotate(x.parent.parent)
+                self.__left_rotate(x.parent)
+            elif x == x.parent.right and x.parent == x.parent.parent.left:
+                # zig-zag rotation
+                self.__left_rotate(x.parent)
+                self.__right_rotate(x.parent)
+            else:
+                # zag-zig rotation
+                self.__right_rotate(x.parent)
+                self.__left_rotate(x.parent)
