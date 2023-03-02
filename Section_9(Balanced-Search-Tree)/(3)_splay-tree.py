@@ -37,6 +37,10 @@
 # Title: Splay Trees (with implementations in C++, Java, and Python)
 # Author: Algorithm Tutor
 # URL: https://algorithmtutor.com/Data-Structures/Tree/Splay-Trees/
+#
+# Splay tree implementation in Python
+# Author: AlgorithmTutor
+# Tutorial URL: http://algorithmtutor.com/Data-Structures/Tree/Splay-Trees/
 
 import sys
 
@@ -193,3 +197,10 @@ class SplayTree:
             sys.stdout.write(node.data + " ")
             self.__pre_order_helper(node.left)
             self.__pre_order_helper(node.right)
+
+    def __in_order_helper(self, node):
+        if node != None:
+            self.__in_order_helper(node.left)
+            sys.stdout.write(node.data + " ")
+            self.__in_order_helper(node.right)
+
