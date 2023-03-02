@@ -302,4 +302,31 @@ class SplayTree:
     def delete_node(self, data):
         self.__delete_node_helper(self.root, data)
 
+    # print the tree structure on the screen
+    def pretty_print(self):
+        self.__print_helper(self.root, "", True)
 
+if __name__ == '__main__':
+    tree = SplayTree()
+    tree.insert(33)
+    tree.insert(44)
+    tree.insert(67)
+    tree.insert(5)
+    tree.insert(89)
+    tree.insert(41)
+    tree.insert(98)
+    tree.insert(1)
+    tree.pretty_print()
+    tree.search_tree(33)
+    tree.search_tree(44)
+    tree.pretty_print()
+    tree.delete_node(89)
+    tree.delete_node(67)
+    tree.delete_node(41)
+    tree.delete_node(5)
+    tree.pretty_print()
+    tree.delete_node(98)
+    tree.delete_node(1)
+    tree.delete_node(44)
+    tree.delete_node(33)
+    tree.pretty_print()
