@@ -232,3 +232,9 @@ class SplayTree:
         if x != None:
             self.__splay(x)
 
+    # find the node with the minimum key
+    def minimum(self, node):
+        while node.left != None:
+            node = node.left
+        return node
+
