@@ -173,3 +173,17 @@ class SplayTree:
                 # zag-zig rotation
                 self.__right_rotate(x.parent)
                 self.__left_rotate(x.parent)
+
+    # joins two trees s and t
+    def __join(self, s, t):
+        if s == None:
+            return t
+
+        if t == None:
+            return s
+
+        x = self.maximum(s)
+        self.__splay(x)
+        x.right = t
+        t.parent = x
+        return x
