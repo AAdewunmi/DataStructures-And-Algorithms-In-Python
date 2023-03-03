@@ -29,7 +29,7 @@ adapted from a course on Udemy.
 
 - [Section 9: Balanced Search Tree](Section_9(Balanced-Search-Tree))
 
-- Section 10: Priority Queues and Heaps
+- [Section 10: Priority Queues and Heaps](Section_10(Priority-Queue-Heaps))
 
 - Section 11: Hashing
 
