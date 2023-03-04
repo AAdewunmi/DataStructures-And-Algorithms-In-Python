@@ -49,3 +49,14 @@ class Heap:
     def is_empty(self):
         return len(self._data)
 
+    def insert(self, e):
+        if self._current_size == self._maxsize:
+            print('No Space in Heap')
+            return
+        self._current_size = self._current_size + 1
+        insert_index = self._current_size
+        while insert_index > 1 and e > self._data[insert_index//2]:
+            self._data[insert_index] = self._data[insert_index//2]
+            insert_index = insert_index//2
+        self._data[insert_index] = e
+
