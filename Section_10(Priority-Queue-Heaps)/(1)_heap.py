@@ -41,7 +41,7 @@ class Heap:
     def __init__(self):
         self._maxsize = 10
         self._data = [-1] * self._maxsize
-        self._csize = 0
+        self._current_size = 0
 
     def __len__(self):
         return len(self._data)
@@ -60,3 +60,16 @@ class Heap:
             insert_index = insert_index//2
         self._data[insert_index] = e
 
+    def max(self):
+        if self._current_size == 0:
+            print('No space in heap')
+            return
+        return self._data[1]
+
+S= Heap()
+S.insert(25)
+S.insert(14)
+S.insert(2)
+S.insert(20)
+S.insert(10)
+print(S._data)
