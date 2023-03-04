@@ -45,3 +45,7 @@ class Heap:
 
     def __len__(self):
         return len(self._data)
+
+    def is_empty(self):
+        return len(self._data)
+
