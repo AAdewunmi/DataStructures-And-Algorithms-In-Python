@@ -66,6 +66,29 @@ class Heap:
             return
         return self._data[1]
 
+    def deletemax(self):
+        if self._current_size == 0:
+            print('Heap is Empty')
+            return
+        e = self._data[1]
+        self._data[1] = self._data[self._current_size]
+        self._data[self._current_size] = - 1
+        self._current_size = self._current_size - 1
+        parent_index = 1
+        child_index = parent_index * 2
+        while child_index <= self._current_size:
+            if self._data[child_index] < self._data[child_index + 1]:
+                child_index = child_index + 1
+            if self._data[parent_index] < self._data[child_index]:
+                temp = self._data[parent_index]
+                self._data[parent_index] = self._data[child_index]
+                self._data[child_index] = temp
+                parent_index = child_index
+                child_index = parent_index * 2
+            else:
+                break
+        return e
+
 S= Heap()
 S.insert(25)
 S.insert(14)
@@ -73,3 +96,7 @@ S.insert(2)
 S.insert(20)
 S.insert(10)
 print(S._data)
+print('Max: ', S.max())
+print('Delete Element: ', S.deletemax())
+print(S._data)
+print('Max: ', S.max())
