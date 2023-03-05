@@ -36,7 +36,7 @@
 # Title: Heap Data Structure
 # URL: https://www.programiz.com/dsa/heap-data-structure
 #
-# Array based implementation of Heap
+# Array based implementation of Max-Heap
 class Heap:
     def __init__(self):
         self._maxsize = 10
