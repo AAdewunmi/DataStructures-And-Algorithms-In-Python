@@ -31,7 +31,7 @@ adapted from a course on Udemy.
 
 - [Section 10: Priority Queues and Heaps](Section_10(Priority-Queue-Heaps))
 
-- [Section 11: Hashing](Section_11(Hashing))
+- [Section 11: Hash Table](Section_11(Hash-Table))
 
 - Section 12: Graphs
 
