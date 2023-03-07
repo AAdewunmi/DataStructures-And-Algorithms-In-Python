@@ -31,3 +31,7 @@ class HashChain:
     def insert(self, element):
         i = self.hashcode(element)
         self.hashtable[i].insertsorted(element)
+
+    def search(self, key):
+        i = self.hashcode(key)
+        return self.hashtable[i].search(key) != -1
