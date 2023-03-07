@@ -118,3 +118,22 @@ class LinkedList:
         p._next = p._next._next
         self._size -= 1
         return e
+
+    # Insert an element, then sort the Linked List
+    def insertsorted(self, e):
+        newest = _Node(e, None)
+        if self.is_empty():
+            self._head = newest
+        else:
+            p = self._head
+            q = self._head
+            while p and p._element < e:
+                q = p
+                p = p._next
+            if p == self._head:
+                newest._next = self._head
+                self._head = newest
+            else:
+                newest._next = q._next
+                q._next = newest
+        self._size += 1
