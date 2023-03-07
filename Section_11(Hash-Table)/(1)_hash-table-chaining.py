@@ -27,3 +27,7 @@ class HashChain:
 
     def hashcode(self, key):
         return key % self.hashtable_size
+
+    def insert(self, element):
+        i = self.hashcode(element)
+        self.hashtable[i].insertsorted(element)
