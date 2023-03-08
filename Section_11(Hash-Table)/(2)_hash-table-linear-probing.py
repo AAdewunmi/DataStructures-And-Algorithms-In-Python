@@ -46,3 +46,19 @@ class HashTableLinearProbe:
                 return False
             j = j + 1
         return True
+
+    # Print contents of the table
+    def display(self):
+        print(self.hashtable)
+
+
+H = HashTableLinearProbe()
+H.insert(54)
+H.insert(78)
+H.insert(64)
+H.insert(92)
+H.insert(34)
+H.insert(86)
+H.insert(28)
+H.display()
+print('Search Result: ', H.search(34))
