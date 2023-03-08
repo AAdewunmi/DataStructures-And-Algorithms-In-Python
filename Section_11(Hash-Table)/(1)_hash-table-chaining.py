@@ -16,6 +16,9 @@
 #
 # Implement Hashing using Chaining method
 # Chains are represented using LinkedList
+#
+# Source: Hash Tables by isaaccomputerscience.org
+# URL: https://isaaccomputerscience.org/concepts/dsa_datastruct_hash_table?examBoard=all&stage=all
 
 from linkedlist import LinkedList
 class HashChain:
