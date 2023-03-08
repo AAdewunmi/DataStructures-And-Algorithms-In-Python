@@ -15,5 +15,15 @@ class HashTableLinearProbe:
         self.hashtable_size = 10
         self.hashtable = [0] * self.hashtable_size
 
+    # Hashing function
     def hashcode(self, key):
         return key % self.hashtable_size
+
+    # Function to compute next index to insert element if index already
+    # has an element stored in the Hash Table
+    def lprobe(self, element):
+        i = self.hashcode(element)
+        j = 0
+        while self.hashtable[(i + j) % self.hashtable_size] != 0:
+            j = j + 1
+        return (i + j) % self.hashtable_size
