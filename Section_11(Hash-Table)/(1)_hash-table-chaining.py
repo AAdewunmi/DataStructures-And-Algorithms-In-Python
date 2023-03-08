@@ -13,12 +13,14 @@
 # Hash tables enable very efficient searching. In the best case, data can be retrieved from a hash table
 # in constant time, so you will find them wherever high performance searching is a requirement. Maintaining
 # (adding, updating and deleting) data in a hash table is also very efficient.
-#
-# Implement Hashing using Chaining method
-# Chains are represented using LinkedList
-#
+
 # Source: Hash Tables by isaaccomputerscience.org
 # URL: https://isaaccomputerscience.org/concepts/dsa_datastruct_hash_table?examBoard=all&stage=all
+
+#
+# Hash Table (Dealing with collisions using Chaining Method)
+# Chains are represented using LinkedList
+#
 
 from linkedlist import LinkedList
 class HashChain:
