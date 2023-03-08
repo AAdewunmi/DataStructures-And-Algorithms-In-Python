@@ -27,3 +27,13 @@ class HashTableLinearProbe:
         while self.hashtable[(i + j) % self.hashtable_size] != 0:
             j = j + 1
         return (i + j) % self.hashtable_size
+
+        # Function to insert elements into the Hash Table
+
+    def insert(self, element):
+        i = self.hashcode(element)
+        if self.hashtable[i] == 0:
+            self.hashtable[i] = element
+        else:
+            i = self.lprobe(element)
+            self.hashtable[i] = element
