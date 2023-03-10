@@ -62,3 +62,11 @@ class Graph:
 
     def vertex_count(self):
         return self._vertices
+
+    def edge_count(self):
+        count = 0
+        for i in range(self._vertices):
+            for j in range(self._vertices):
+                if self._adjacent_matrix[i][j] != 0:
+                    count = count + 1
+        return count
