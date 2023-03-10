@@ -53,3 +53,6 @@ class Graph:
 
     def insert_edge(self, u, v, weight_edge = 1):
         self._adjacent_matrix[u][v] = weight_edge
+
+    def remove_edge(self, u, v):
+        self._adjacent_matrix[u][v] = 0
