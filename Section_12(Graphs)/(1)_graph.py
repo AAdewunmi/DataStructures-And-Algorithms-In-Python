@@ -70,3 +70,8 @@ class Graph:
                 if self._adjacent_matrix[i][j] != 0:
                     count = count + 1
         return count
+
+    def vertices_print(self):
+        for i in range(self._vertices):
+            print(i, end=' ')
+        print()
