@@ -59,3 +59,6 @@ class Graph:
 
     def exist_edge(self, u, v):
         return self._adjacent_matrix[u][v] != 0
+
+    def vertex_count(self):
+        return self._vertices
