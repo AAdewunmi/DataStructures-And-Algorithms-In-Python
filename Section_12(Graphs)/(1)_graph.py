@@ -56,3 +56,6 @@ class Graph:
 
     def remove_edge(self, u, v):
         self._adjacent_matrix[u][v] = 0
+
+    def exist_edge(self, u, v):
+        return self._adjacent_matrix[u][v] != 0
