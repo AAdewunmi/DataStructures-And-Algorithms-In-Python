@@ -87,4 +87,11 @@ class Graph:
         for j in range(self._vertices):
             if self._adjacent_matrix[v][j] != 0:
                 count = count + 1
-            return count
+        return count
+
+    def indegree(self, v):
+        count = 0
+        for i in range(self._vertices):
+            if self._adjacent_matrix[i][v] != 0:
+                count = count + 1
+        return count
