@@ -75,3 +75,9 @@ class Graph:
         for i in range(self._vertices):
             print(i, end=' ')
         print()
+
+    def edges_print(self):
+        for i in range(self._vertices):
+            for j in range(self._vertices):
+                if self._adjacent_matrix[i][j] != 0:
+                    print(i, '--', j)
