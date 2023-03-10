@@ -50,3 +50,6 @@ class Graph:
     def __init__(self, vertices):
         self._vertices = vertices
         self._adjacent_matrix = np.array((vertices, vertices))
+
+    def insert_edge(self, u, v, weight_edge = 1):
+        self._adjacent_matrix[u][v] = weight_edge
