@@ -95,3 +95,7 @@ class Graph:
             if self._adjacent_matrix[i][v] != 0:
                 count = count + 1
         return count
+
+    # Helper function to display adjacency matrix
+    def display_adjacent_matrix(self):
+        print(self._adjacent_matrix)
