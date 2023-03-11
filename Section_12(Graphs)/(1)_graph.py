@@ -50,6 +50,7 @@ class Graph:
     def __init__(self, vertices):
         self._vertices = vertices
         self._adjacent_matrix = np.zeros((vertices, vertices))
+        self._visited = [0] * self._vertices
 
     def insert_edge(self, u, v, weight_edge = 1):
         self._adjacent_matrix[u][v] = weight_edge
@@ -103,16 +104,15 @@ class Graph:
     def BFS(self, source_vertex):
         i = source_vertex
         q = LinkedListQueue()
-        visited = [0] * self._vertices
         print(i, end=' ')
-        visited[i] = 1
+        self._visited[i] = 1
         q.enqueue(i)
         while not q.is_empty():
             i = q.dequeue()
             for j in range(self._vertices):
-                if self._adjacent_matrix[i][j] == 1 and visited[j] == 0:
+                if self._adjacent_matrix[i][j] == 1 and self._visited[j] == 0:
                     print(j, end=' ')
-                    visited[j] = 1
+                    self._visited[j] = 1
                     q.enqueue(j)
 
     def DFS(self,source_vertex):
