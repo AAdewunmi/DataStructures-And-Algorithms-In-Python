@@ -115,3 +115,11 @@ class Graph:
                     visited[j] = 1
                     q.enqueue(j)
 
+    def DFS(self,source_vertex):
+        if self._visited[source_vertex]==0:
+            print(source_vertex,end=' ')
+            self._visited[source_vertex]=1
+            for j in range(self._vertices):
+                if self._adjacent_matrix[source_vertex][j]==1 and self._visited[j]==0:
+                    self.DFS(j)
+
