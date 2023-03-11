@@ -1,3 +1,4 @@
+from queuelinkedlist import LinkedListQueue
 import numpy as np
 
 class Graph:
