@@ -100,3 +100,18 @@ class Graph:
     def display_adjacent_matrix(self):
         print(self._adjacent_matrix)
 
+    def BFS(self, source_vertex):
+        i = source_vertex
+        q = LinkedListQueue()
+        visited = [0] * self._vertices
+        print(i, end=' ')
+        visited[i] = 1
+        q.enqueue(i)
+        while not q.is_empty():
+            i = q.dequeue()
+            for j in range(self._vertices):
+                if self._adjacent_matrix[i][j] == 1 and visited[j] == 0:
+                    print(j, end=' ')
+                    visited[j] = 1
+                    q.enqueue(j)
+
