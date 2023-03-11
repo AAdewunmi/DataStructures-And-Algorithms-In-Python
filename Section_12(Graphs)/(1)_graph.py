@@ -85,7 +85,7 @@ class Graph:
     def outdegree(self, v):
         count = 0
         for j in range(self._vertices):
-            if self._adjacent_matrix[v][j] != 0:
+            if not self._adjacent_matrix[v][j] != 0:
                 count = count + 1
         return count
 
