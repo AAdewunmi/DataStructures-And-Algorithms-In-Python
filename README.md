@@ -1,15 +1,37 @@
-# $$\textcolor{red}{\text{UNDER CONSTRUCTION}}$$
-
 # Project Title:
 
 An Implementation of Data Structures And Algorithms In Python
 
-## 1. What is the project?
+## 1. Project Description:
 
 This repository contains an implementation of various Data Structures and Algorithms using Python programming language, 
 adapted from a course on Udemy.
 
-## 2. Outline:
+## 2. Installation:
+
+i. Clone the git repo
+
+```
+https://github.com/AAdewunmi/DataStructures-And-Algorithms-In-Python.git
+```
+
+ii. Open project folder
+
+iii. Explore
+
+😎
+
+## 3. How to Use:
+
+You can choose to run individual Python files in your preferred IDE or buy the course that accompanies the code base so you 
+can follow along with visualisations of Binary Search Trees and Graphs etc.
+
+## 4. Contributing:
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+
+## 5. Outline:
 
 - [Section 1: Python Crash Course](Section_1(Python-Crash-Course)/)
 
@@ -33,9 +55,9 @@ adapted from a course on Udemy.
 
 - [Section 11: Hash Table](Section_11(Hash-Table))
 
-- Section 12: Graphs
+- [Section 12: Graphs](Section_12(Graphs))
 
-## 3. Adapted from: 
+## 6. Adapted from: 
 
 UDEMY: Data Structures and Algorithms: In-Depth using Python
 
